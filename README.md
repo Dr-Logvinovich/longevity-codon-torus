@@ -1,5 +1,8 @@
 # The Toric Architecture of Extreme Animal Longevity and Biological Immortality
 
+[![Zero-RNG CI](https://github.com/Dr-Logvinovich/longevity-codon-torus/actions/workflows/ci.yml/badge.svg)](https://github.com/Dr-Logvinovich/longevity-codon-torus/actions/workflows/ci.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24570020.svg)](https://doi.org/10.5281/zenodo.24570020)
+[![Monograph PDF](https://img.shields.io/badge/Monograph-v1.5%20PDF%20(19%20pp)-b31b1b.svg)](longevity_torus_v1_5.pdf)
 [![Engine](https://img.shields.io/badge/Engine-v1.4.4-006d77.svg)](https://github.com/Dr-Logvinovich/longevity-codon-torus/blob/main/tortoise_longevity_torus_v1_0.py)
 [![Self-Tests](https://img.shields.io/badge/Zero--RNG%20Self--Tests-64%2F64%20PASS-1b9e77.svg)](#zero-rng-verification-certificate)
 [![Free Parameters](https://img.shields.io/badge/Free%20Parameters-p%20%3D%200-386cb0.svg)](#exact-mathematical-framework)
@@ -212,6 +215,10 @@ This repository is part of a unified, strictly Zero-RNG computational genomics a
 
 ```text
 longevity-codon-torus/
+├── longevity_torus_v1_5.pdf           # Audited Edition v1.5 monograph (19 pages, 8 tables, 5 figures)
+├── longevity_torus_v1_5.tex           # Complete publication-ready LaTeX source
+├── CITATION.cff                       # Machine-readable academic citation metadata (Zenodo DOI + ORCID)
+├── .github/workflows/ci.yml           # Automated GitHub Actions Zero-RNG & 64/64 self-test CI
 ├── tortoise_longevity_torus_v1_0.py   # Single-file Zero-RNG engine v1.4.4 (64/64 self-tests)
 ├── tortoise_ncbi_manifest.json        # Frozen NCBI RefSeq/GenBank accession manifest (23 taxa)
 ├── results_tortoise_v1_4/
@@ -298,6 +305,7 @@ If you use this codebase, dataset, or Klein V<sub>4</sub> spectral framework in 
   title   = {The Toric Architecture of Extreme Animal Longevity and Biological Immortality: Exact Zero-RNG Klein V4 Spectral Algebra, Archosaurian Stasis, and Four Evolutionary Genomic Strategies Across 22 Animal Species},
   year    = {2026},
   note    = {Audited Edition v1.5; Engine v1.4.4 (64/64 Zero-RNG Self-Tests)},
+  doi     = {10.5281/zenodo.24570020},
   url     = {https://github.com/Dr-Logvinovich/longevity-codon-torus}
 }
 ```
