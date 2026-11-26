@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+title: "The Toric Architecture of Extreme Animal Longevity and Biological Immortality: Exact Zero-RNG Klein V4 Spectral Algebra, Archosaurian Stasis, and Four Evolutionary Genomic Strategies Across 22 Animal Species"
+message: "If you use this software, dataset, or algebraic framework in your research, please cite it using the metadata below."
+type: software
+version: "1.5"
+date-released: "2026-11-26"
+doi: "10.5281/zenodo.24570020"
+license: MIT
+repository-code: "https://github.com/Dr-Logvinovich/longevity-codon-torus"
+url: "https://doi.org/10.5281/zenodo.24570020"
+authors:
+  - family-names: Logvinovich
+    given-names: Victor
+    orcid: "https://orcid.org/0009-0007-2040-6955"
+    email: "lomakez@icloud.com"
+  - family-names: Perez
+    given-names: Jean-Claude
+    orcid: "https://orcid.org/0000-0001-6446-2042"
+    email: "jeanclaudeperez2@gmail.com"
+    affiliation: "Luc Montagnier Foundation; Retired IBM AI European Research Centre"
+keywords:
+  - "Klein four-group V4"
+  - "double-stranded codon torus"
+  - "extreme animal longevity"
+  - "biological immortality"
+  - "Aldabra giant tortoise"
+  - "Greenland shark"
+  - "Arctica islandica"
+  - "Hydra vulgaris"
+  - "Turritopsis dohrnii"
+  - "Archosaurian stasis"
+  - "zero-RNG bioinformatics"
+  - "Hurst exponent"
+  - "COSMIC mutational signatures"
+  - "comparative genomics"
+preferred-citation:
+  type: article
+  title: "The Toric Architecture of Extreme Animal Longevity and Biological Immortality: Exact Zero-RNG Klein V4 Spectral Algebra, Archosaurian Stasis, and Four Evolutionary Genomic Strategies Across 22 Animal Species"
+  authors:
+    - family-names: Logvinovich
+      given-names: Victor
+      orcid: "https://orcid.org/0009-0007-2040-6955"
+    - family-names: Perez
+      given-names: Jean-Claude
+      orcid: "https://orcid.org/0000-0001-6446-2042"
+  year: 2026
+  month: 11
+  doi: "10.5281/zenodo.24570020"
+  url: "https://doi.org/10.5281/zenodo.24570020"
