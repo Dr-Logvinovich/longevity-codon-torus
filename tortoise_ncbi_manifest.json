@@ -1,0 +1,2797 @@
+{
+  "provenance": {
+    "engine": "tortoise_longevity_torus",
+    "version": "1.4.2",
+    "timestamp_utc": "2026-11-26T12:08:57Z",
+    "python_version": "3.12.1",
+    "numpy_version": "2.3.2",
+    "scipy_version": "1.16.2",
+    "matplotlib_version": "3.10.6",
+    "platform": "macOS-15.7.7-x86_64-i386-64bit",
+    "script_sha256": "c461ae276ea36d02ed05ebd45af2ac6be2853ec1550c959f1d7b0eca19f59e39",
+    "zero_rng": true
+  },
+  "species": {
+    "Aldabra_Tortoise": {
+      "meta": {
+        "key": "Aldabra_Tortoise",
+        "scientific_name": "Aldabrachelys gigantea",
+        "clade_group": "testudines_giant",
+        "max_lifespan_yr": 190.0,
+        "notes": "Jonathan lineage; world's oldest living terrestrial animal"
+      },
+      "assembly": {
+        "assembly_uid": "14410571",
+        "assembly_acc": "GCA_026122505.1",
+        "assembly_name": "AldGig_1.0",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 148569599,
+        "contig_n50": 58656949,
+        "taxid": "167804",
+        "is_refseq": false
+      },
+      "top_sequences": [
+        {
+          "acc": "CM047479.1",
+          "slen": 382674379,
+          "title": "Aldabrachelys gigantea isolate Hermania_blood chromosome 1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM047480.1",
+          "slen": 300069912,
+          "title": "Aldabrachelys gigantea isolate Hermania_blood chromosome 2, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM047481.1",
+          "slen": 215610600,
+          "title": "Aldabrachelys gigantea isolate Hermania_blood chromosome 3, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM047482.1",
+          "slen": 157643881,
+          "title": "Aldabrachelys gigantea isolate Hermania_blood chromosome 4, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM047483.1",
+          "slen": 148569599,
+          "title": "Aldabrachelys gigantea isolate Hermania_blood chromosome 5, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {
+        "XRCC3": null,
+        "XRCC5": null,
+        "BARD1": null,
+        "DDB2": null,
+        "FANCL": null,
+        "POLQ": null,
+        "POLE2": null,
+        "RAD51B": null,
+        "RAD23A": null,
+        "RFC1": null,
+        "RHNO1": null,
+        "SIRT4": null,
+        "XAB2": null,
+        "TP53": null,
+        "EGFR": null,
+        "HAS2": null,
+        "PRKCA": null,
+        "CPA3": null,
+        "BRCA1": null,
+        "BRCA2": null,
+        "PIK3CA": null,
+        "POT1": null,
+        "LSM11": null,
+        "APOA1": null,
+        "NCOR2": null,
+        "ALDH2": null,
+        "NOX4": null,
+        "SOCS2": null,
+        "GAPDH": null,
+        "ACTB": null
+      }
+    },
+    "Galapagos_Tortoise": {
+      "meta": {
+        "key": "Galapagos_Tortoise",
+        "scientific_name": "Chelonoidis abingdonii",
+        "clade_group": "testudines_giant",
+        "max_lifespan_yr": 175.0,
+        "notes": "Lonesome George; giant Galapagos tortoise RefSeq reference"
+      },
+      "assembly": {
+        "assembly_uid": "28440771",
+        "assembly_acc": "GCF_003597395.2",
+        "assembly_name": "CheloAbing_2.0",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 148185065,
+        "contig_n50": 119261,
+        "taxid": "106734",
+        "is_refseq": true
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_133769.1",
+          "slen": 374107374,
+          "title": "Chelonoidis abingdonii isolate Lonesome George chromosome 1, CheloAbing_2.0, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_133770.1",
+          "slen": 303627116,
+          "title": "Chelonoidis abingdonii isolate Lonesome George chromosome 2, CheloAbing_2.0, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_133771.1",
+          "slen": 217722593,
+          "title": "Chelonoidis abingdonii isolate Lonesome George chromosome 3, CheloAbing_2.0, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {
+        "XRCC3": {
+          "acc": "XM_075065707.1",
+          "slen": 4297,
+          "title": "PREDICTED: Chelonoidis abingdonii X-ray repair cross complementing 3 (XRCC3), mRNA"
+        },
+        "XRCC5": {
+          "acc": "XM_032764425.2",
+          "slen": 4016,
+          "title": "PREDICTED: Chelonoidis abingdonii X-ray repair cross complementing 5 (XRCC5), transcript variant X1, mRNA"
+        },
+        "BARD1": {
+          "acc": "XM_032805318.2",
+          "slen": 3831,
+          "title": "PREDICTED: Chelonoidis abingdonii BRCA1 associated RING domain 1 (BARD1), mRNA"
+        },
+        "DDB2": {
+          "acc": "XM_032782187.2",
+          "slen": 2385,
+          "title": "PREDICTED: Chelonoidis abingdonii damage specific DNA binding protein 2 (DDB2), transcript variant X1, mRNA"
+        },
+        "FANCL": {
+          "acc": "XM_032792666.2",
+          "slen": 1236,
+          "title": "PREDICTED: Chelonoidis abingdonii FA complementation group L (FANCL), mRNA"
+        },
+        "POLQ": {
+          "acc": "XM_032773589.2",
+          "slen": 8519,
+          "title": "PREDICTED: Chelonoidis abingdonii DNA polymerase theta (POLQ), mRNA"
+        },
+        "POLE2": {
+          "acc": "XM_075065738.1",
+          "slen": 2009,
+          "title": "PREDICTED: Chelonoidis abingdonii DNA polymerase epsilon 2, accessory subunit (POLE2), mRNA"
+        },
+        "RAD51B": {
+          "acc": "XM_075065391.1",
+          "slen": 3821,
+          "title": "PREDICTED: Chelonoidis abingdonii RAD51 paralog B (RAD51B), transcript variant X18, mRNA"
+        },
+        "RAD23A": {
+          "acc": "XM_032789936.2",
+          "slen": 3242,
+          "title": "PREDICTED: Chelonoidis abingdonii RAD23 nucleotide excision repair protein A (RAD23A), transcript variant X1, mRNA"
+        },
+        "RFC1": {
+          "acc": "XM_032790725.2",
+          "slen": 4040,
+          "title": "PREDICTED: Chelonoidis abingdonii replication factor C subunit 1 (RFC1), transcript variant X2, mRNA"
+        },
+        "RHNO1": {
+          "acc": "XM_032775052.2",
+          "slen": 1011,
+          "title": "PREDICTED: Chelonoidis abingdonii RAD9-HUS1-RAD1 interacting nuclear orphan 1 (RHNO1), mRNA"
+        },
+        "SIRT4": {
+          "acc": "XM_032787672.2",
+          "slen": 1957,
+          "title": "PREDICTED: Chelonoidis abingdonii sirtuin 4 (SIRT4), mRNA"
+        },
+        "XAB2": {
+          "acc": "XM_032776753.2",
+          "slen": 3279,
+          "title": "PREDICTED: Chelonoidis abingdonii XPA binding protein 2 (XAB2), transcript variant X1, mRNA"
+        },
+        "TP53": {
+          "acc": "XM_032794536.2",
+          "slen": 1642,
+          "title": "PREDICTED: Chelonoidis abingdonii tumor protein p53 (TP53), mRNA"
+        },
+        "EGFR": {
+          "acc": "XM_032793483.2",
+          "slen": 9765,
+          "title": "PREDICTED: Chelonoidis abingdonii epidermal growth factor receptor (EGFR), transcript variant X1, mRNA"
+        },
+        "HAS2": {
+          "acc": "XM_032777236.2",
+          "slen": 4055,
+          "title": "PREDICTED: Chelonoidis abingdonii hyaluronan synthase 2 (HAS2), mRNA"
+        },
+        "PRKCA": {
+          "acc": "XM_032776311.2",
+          "slen": 6459,
+          "title": "PREDICTED: Chelonoidis abingdonii protein kinase C alpha (PRKCA), transcript variant X4, mRNA"
+        },
+        "CPA3": null,
+        "BRCA1": {
+          "acc": "XM_032772710.2",
+          "slen": 7206,
+          "title": "PREDICTED: Chelonoidis abingdonii BRCA1 DNA repair associated (BRCA1), transcript variant X1, mRNA"
+        },
+        "BRCA2": {
+          "acc": "XM_075061645.1",
+          "slen": 10952,
+          "title": "PREDICTED: Chelonoidis abingdonii BRCA2 DNA repair associated (BRCA2), mRNA"
+        },
+        "PIK3CA": {
+          "acc": "XM_075068374.1",
+          "slen": 11533,
+          "title": "PREDICTED: Chelonoidis abingdonii phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha (PIK3CA), transcript variant X1, mRNA"
+        },
+        "POT1": {
+          "acc": "XM_032800954.2",
+          "slen": 4503,
+          "title": "PREDICTED: Chelonoidis abingdonii protection of telomeres 1 (POT1), transcript variant X1, mRNA"
+        },
+        "LSM11": {
+          "acc": "XM_075068203.1",
+          "slen": 9599,
+          "title": "PREDICTED: Chelonoidis abingdonii LSM11, U7 small nuclear RNA associated (LSM11), mRNA"
+        },
+        "APOA1": {
+          "acc": "XM_032796103.2",
+          "slen": 4100,
+          "title": "PREDICTED: Chelonoidis abingdonii apolipoprotein A1 (APOA1), mRNA"
+        },
+        "NCOR2": {
+          "acc": "XM_075060010.1",
+          "slen": 9481,
+          "title": "PREDICTED: Chelonoidis abingdonii nuclear receptor corepressor 2 (NCOR2), transcript variant X14, mRNA"
+        },
+        "ALDH2": {
+          "acc": "XM_032800495.2",
+          "slen": 2270,
+          "title": "PREDICTED: Chelonoidis abingdonii aldehyde dehydrogenase 2 family member (ALDH2), mRNA"
+        },
+        "NOX4": {
+          "acc": "XM_032768741.1",
+          "slen": 1737,
+          "title": "PREDICTED: Chelonoidis abingdonii NADPH oxidase 4 (NOX4), transcript variant X1, mRNA"
+        },
+        "SOCS2": {
+          "acc": "XM_032774904.2",
+          "slen": 6260,
+          "title": "PREDICTED: Chelonoidis abingdonii suppressor of cytokine signaling 2 (SOCS2), mRNA"
+        },
+        "GAPDH": {
+          "acc": "XM_032781995.2",
+          "slen": 1411,
+          "title": "PREDICTED: Chelonoidis abingdonii glyceraldehyde-3-phosphate dehydrogenase (GAPDH), mRNA"
+        },
+        "ACTB": {
+          "acc": "XM_032767783.2",
+          "slen": 1793,
+          "title": "PREDICTED: Chelonoidis abingdonii actin beta (ACTB), mRNA"
+        }
+      }
+    },
+    "Desert_Tortoise": {
+      "meta": {
+        "key": "Desert_Tortoise",
+        "scientific_name": "Gopherus evgoodei",
+        "clade_group": "testudines_long",
+        "max_lifespan_yr": 80.0,
+        "notes": "Long-lived terrestrial tortoise (RefSeq chromosome-level)"
+      },
+      "assembly": {
+        "assembly_uid": "4056201",
+        "assembly_acc": "GCF_007399415.2",
+        "assembly_name": "rGopEvg1_v1.p",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 147425149,
+        "contig_n50": 13026736,
+        "taxid": "1825980",
+        "is_refseq": true
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_044322.1",
+          "slen": 370335144,
+          "title": "Gopherus evgoodei ecotype Sinaloan lineage chromosome 1, rGopEvg1_v1.p, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_044323.1",
+          "slen": 299447175,
+          "title": "Gopherus evgoodei ecotype Sinaloan lineage chromosome 2, rGopEvg1_v1.p, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_044324.1",
+          "slen": 225143049,
+          "title": "Gopherus evgoodei ecotype Sinaloan lineage chromosome 3, rGopEvg1_v1.p, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {
+        "XRCC3": {
+          "acc": "XM_030558651.1",
+          "slen": 1882,
+          "title": "PREDICTED: Gopherus evgoodei X-ray repair cross complementing 3 (XRCC3), transcript variant X2, mRNA"
+        },
+        "XRCC5": {
+          "acc": "XM_030579947.1",
+          "slen": 2942,
+          "title": "PREDICTED: Gopherus evgoodei X-ray repair cross complementing 5 (XRCC5), transcript variant X1, mRNA"
+        },
+        "BARD1": {
+          "acc": "XM_030579559.1",
+          "slen": 3934,
+          "title": "PREDICTED: Gopherus evgoodei BRCA1 associated RING domain 1 (BARD1), mRNA"
+        },
+        "DDB2": {
+          "acc": "XM_030559881.1",
+          "slen": 2388,
+          "title": "PREDICTED: Gopherus evgoodei damage specific DNA binding protein 2 (DDB2), transcript variant X2, mRNA"
+        },
+        "FANCL": {
+          "acc": "XM_030557831.1",
+          "slen": 1270,
+          "title": "PREDICTED: Gopherus evgoodei FA complementation group L (FANCL), mRNA"
+        },
+        "POLQ": {
+          "acc": "XM_030534424.1",
+          "slen": 7986,
+          "title": "PREDICTED: Gopherus evgoodei DNA polymerase theta (POLQ), mRNA"
+        },
+        "POLE2": {
+          "acc": "XM_030562806.1",
+          "slen": 3803,
+          "title": "PREDICTED: Gopherus evgoodei DNA polymerase epsilon 2, accessory subunit (POLE2), mRNA"
+        },
+        "RAD51B": {
+          "acc": "XM_030559735.1",
+          "slen": 1770,
+          "title": "PREDICTED: Gopherus evgoodei RAD51 paralog B (RAD51B), transcript variant X12, mRNA"
+        },
+        "RAD23A": {
+          "acc": "XM_030545915.1",
+          "slen": 4135,
+          "title": "PREDICTED: Gopherus evgoodei RAD23 homolog A, nucleotide excision repair protein (RAD23A), transcript variant X1, mRNA"
+        },
+        "RFC1": {
+          "acc": "XM_030565630.1",
+          "slen": 4036,
+          "title": "PREDICTED: Gopherus evgoodei replication factor C subunit 1 (RFC1), mRNA"
+        },
+        "RHNO1": {
+          "acc": "XM_030538424.1",
+          "slen": 1084,
+          "title": "PREDICTED: Gopherus evgoodei RAD9-HUS1-RAD1 interacting nuclear orphan 1 (RHNO1), transcript variant X1, mRNA"
+        },
+        "SIRT4": {
+          "acc": "XM_030582765.1",
+          "slen": 2166,
+          "title": "PREDICTED: Gopherus evgoodei sirtuin 4 (SIRT4), transcript variant X3, mRNA"
+        },
+        "XAB2": {
+          "acc": "XM_030545533.1",
+          "slen": 3263,
+          "title": "PREDICTED: Gopherus evgoodei XPA binding protein 2 (XAB2), transcript variant X1, mRNA"
+        },
+        "TP53": {
+          "acc": "XM_030548110.1",
+          "slen": 1896,
+          "title": "PREDICTED: Gopherus evgoodei tumor protein p53 (TP53), mRNA"
+        },
+        "EGFR": {
+          "acc": "XM_030551427.1",
+          "slen": 12405,
+          "title": "PREDICTED: Gopherus evgoodei epidermal growth factor receptor (EGFR), transcript variant X1, mRNA"
+        },
+        "HAS2": {
+          "acc": "XM_030553766.1",
+          "slen": 4036,
+          "title": "PREDICTED: Gopherus evgoodei hyaluronan synthase 2 (HAS2), mRNA"
+        },
+        "PRKCA": {
+          "acc": "XM_030534521.1",
+          "slen": 7354,
+          "title": "PREDICTED: Gopherus evgoodei protein kinase C alpha (PRKCA), transcript variant X1, mRNA"
+        },
+        "CPA3": null,
+        "BRCA1": {
+          "acc": "XM_030541132.1",
+          "slen": 7254,
+          "title": "PREDICTED: Gopherus evgoodei BRCA1 DNA repair associated (BRCA1), transcript variant X1, mRNA"
+        },
+        "BRCA2": {
+          "acc": "XM_030563082.1",
+          "slen": 11472,
+          "title": "PREDICTED: Gopherus evgoodei BRCA2 DNA repair associated (BRCA2), transcript variant X1, mRNA"
+        },
+        "PIK3CA": {
+          "acc": "XM_030576607.1",
+          "slen": 6076,
+          "title": "PREDICTED: Gopherus evgoodei phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha (PIK3CA), transcript variant X2, mRNA"
+        },
+        "POT1": {
+          "acc": "XM_030549168.1",
+          "slen": 5029,
+          "title": "PREDICTED: Gopherus evgoodei protection of telomeres 1 (POT1), transcript variant X2, mRNA"
+        },
+        "LSM11": {
+          "acc": "XM_030572428.1",
+          "slen": 2229,
+          "title": "PREDICTED: Gopherus evgoodei LSM11, U7 small nuclear RNA associated (LSM11), mRNA"
+        },
+        "APOA1": {
+          "acc": "XM_030538049.1",
+          "slen": 4608,
+          "title": "PREDICTED: Gopherus evgoodei apolipoprotein A1 (APOA1), transcript variant X1, mRNA"
+        },
+        "NCOR2": {
+          "acc": "XM_030583499.1",
+          "slen": 9285,
+          "title": "PREDICTED: Gopherus evgoodei nuclear receptor corepressor 2 (NCOR2), transcript variant X13, mRNA"
+        },
+        "ALDH2": {
+          "acc": "XM_030582579.1",
+          "slen": 2240,
+          "title": "PREDICTED: Gopherus evgoodei aldehyde dehydrogenase 2 family member (ALDH2), mRNA"
+        },
+        "NOX4": {
+          "acc": "XM_030559092.1",
+          "slen": 1673,
+          "title": "PREDICTED: Gopherus evgoodei NADPH oxidase 4 (NOX4), transcript variant X1, mRNA"
+        },
+        "SOCS2": null,
+        "GAPDH": {
+          "acc": "XM_030535495.1",
+          "slen": 1402,
+          "title": "PREDICTED: Gopherus evgoodei glyceraldehyde-3-phosphate dehydrogenase (GAPDH), transcript variant X2, mRNA"
+        },
+        "ACTB": {
+          "acc": "XM_030576866.1",
+          "slen": 1792,
+          "title": "PREDICTED: Gopherus evgoodei actin beta (ACTB), mRNA"
+        }
+      }
+    },
+    "Box_Turtle": {
+      "meta": {
+        "key": "Box_Turtle",
+        "scientific_name": "Terrapene triunguis",
+        "clade_group": "testudines_med",
+        "max_lifespan_yr": 60.0,
+        "notes": "Three-toed box turtle (Testudines control)"
+      },
+      "assembly": {
+        "assembly_uid": "1990211",
+        "assembly_acc": "GCF_002925995.2",
+        "assembly_name": "T_m_triunguis-2.0",
+        "assembly_status": "Scaffold",
+        "scaffold_n50": 24249581,
+        "contig_n50": 76614,
+        "taxid": "2587831",
+        "is_refseq": true
+      },
+      "top_sequences": [],
+      "genes": {
+        "XRCC3": {
+          "acc": "XM_026654234.2",
+          "slen": 3241,
+          "title": "PREDICTED: Terrapene carolina triunguis X-ray repair cross complementing 3 (XRCC3), transcript variant X1, mRNA"
+        },
+        "XRCC5": {
+          "acc": "XM_029910532.1",
+          "slen": 2712,
+          "title": "PREDICTED: Terrapene carolina triunguis X-ray repair cross complementing 5 (XRCC5), transcript variant X1, mRNA"
+        },
+        "BARD1": {
+          "acc": "XM_026647710.2",
+          "slen": 4163,
+          "title": "PREDICTED: Terrapene carolina triunguis BRCA1 associated RING domain 1 (BARD1), mRNA"
+        },
+        "DDB2": {
+          "acc": "XM_024215129.2",
+          "slen": 2353,
+          "title": "PREDICTED: Terrapene carolina triunguis damage specific DNA binding protein 2 (DDB2), mRNA"
+        },
+        "FANCL": {
+          "acc": "XM_026653164.1",
+          "slen": 1221,
+          "title": "PREDICTED: Terrapene carolina triunguis FA complementation group L (FANCL), mRNA"
+        },
+        "POLQ": null,
+        "POLE2": {
+          "acc": "XM_026654248.2",
+          "slen": 3036,
+          "title": "PREDICTED: Terrapene carolina triunguis DNA polymerase epsilon 2, accessory subunit (POLE2), transcript variant X3, mRNA"
+        },
+        "RAD51B": {
+          "acc": "XM_026651550.1",
+          "slen": 1677,
+          "title": "PREDICTED: Terrapene carolina triunguis RAD51 paralog B (RAD51B), transcript variant X2, mRNA"
+        },
+        "RAD23A": {
+          "acc": "XM_024217267.2",
+          "slen": 1263,
+          "title": "PREDICTED: Terrapene carolina triunguis RAD23 homolog A, nucleotide excision repair protein (RAD23A), transcript variant X1, mRNA"
+        },
+        "RFC1": {
+          "acc": "XM_029910678.1",
+          "slen": 4058,
+          "title": "PREDICTED: Terrapene carolina triunguis replication factor C subunit 1 (RFC1), mRNA"
+        },
+        "RHNO1": {
+          "acc": "XM_026658531.2",
+          "slen": 1028,
+          "title": "PREDICTED: Terrapene carolina triunguis RAD9-HUS1-RAD1 interacting nuclear orphan 1 (RHNO1), partial mRNA"
+        },
+        "SIRT4": {
+          "acc": "XM_024198049.1",
+          "slen": 1927,
+          "title": "PREDICTED: Terrapene carolina triunguis sirtuin 4 (SIRT4), transcript variant X1, mRNA"
+        },
+        "XAB2": {
+          "acc": "XM_026660268.2",
+          "slen": 3278,
+          "title": "PREDICTED: Terrapene carolina triunguis XPA binding protein 2 (XAB2), mRNA"
+        },
+        "TP53": {
+          "acc": "XM_024218614.3",
+          "slen": 1577,
+          "title": "PREDICTED: Terrapene carolina triunguis tumor protein p53 (TP53), mRNA"
+        },
+        "EGFR": null,
+        "HAS2": {
+          "acc": "XM_024217014.2",
+          "slen": 3095,
+          "title": "PREDICTED: Terrapene carolina triunguis hyaluronan synthase 2 (HAS2), mRNA"
+        },
+        "PRKCA": {
+          "acc": "XM_026654585.2",
+          "slen": 2619,
+          "title": "PREDICTED: Terrapene carolina triunguis protein kinase C alpha (PRKCA), transcript variant X1, mRNA"
+        },
+        "CPA3": {
+          "acc": "XM_029911114.1",
+          "slen": 1069,
+          "title": "PREDICTED: Terrapene carolina triunguis carboxypeptidase A3 (CPA3), mRNA"
+        },
+        "BRCA1": {
+          "acc": "XM_029912243.1",
+          "slen": 7616,
+          "title": "PREDICTED: Terrapene carolina triunguis BRCA1 DNA repair associated (BRCA1), transcript variant X1, mRNA"
+        },
+        "BRCA2": null,
+        "PIK3CA": {
+          "acc": "XM_024219537.3",
+          "slen": 4929,
+          "title": "PREDICTED: Terrapene carolina triunguis phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha (PIK3CA), transcript variant X1, mRNA"
+        },
+        "POT1": {
+          "acc": "XM_026648918.2",
+          "slen": 5759,
+          "title": "PREDICTED: Terrapene carolina triunguis protection of telomeres 1 (POT1), mRNA"
+        },
+        "LSM11": {
+          "acc": "XM_024214200.2",
+          "slen": 1622,
+          "title": "PREDICTED: Terrapene carolina triunguis LSM11, U7 small nuclear RNA associated (LSM11), partial mRNA"
+        },
+        "APOA1": {
+          "acc": "XM_024216421.3",
+          "slen": 1254,
+          "title": "PREDICTED: Terrapene carolina triunguis apolipoprotein A1 (APOA1), mRNA"
+        },
+        "NCOR2": {
+          "acc": "XM_024196814.3",
+          "slen": 8879,
+          "title": "PREDICTED: Terrapene carolina triunguis nuclear receptor corepressor 2 (NCOR2), mRNA"
+        },
+        "ALDH2": {
+          "acc": "XM_024196242.3",
+          "slen": 2324,
+          "title": "PREDICTED: Terrapene carolina triunguis aldehyde dehydrogenase 2 family member (ALDH2), mRNA"
+        },
+        "NOX4": {
+          "acc": "XM_024215249.2",
+          "slen": 2233,
+          "title": "PREDICTED: Terrapene carolina triunguis NADPH oxidase 4 (NOX4), mRNA"
+        },
+        "SOCS2": {
+          "acc": "XM_024218188.2",
+          "slen": 1893,
+          "title": "PREDICTED: Terrapene carolina triunguis suppressor of cytokine signaling 2 (SOCS2), mRNA"
+        },
+        "GAPDH": {
+          "acc": "XM_024212053.2",
+          "slen": 1358,
+          "title": "PREDICTED: Terrapene carolina triunguis glyceraldehyde-3-phosphate dehydrogenase (GAPDH), mRNA"
+        },
+        "ACTB": {
+          "acc": "XM_026650585.2",
+          "slen": 1769,
+          "title": "PREDICTED: Terrapene carolina triunguis actin beta (ACTB), mRNA"
+        }
+      }
+    },
+    "Painted_Turtle": {
+      "meta": {
+        "key": "Painted_Turtle",
+        "scientific_name": "Chrysemys picta",
+        "clade_group": "testudines_med",
+        "max_lifespan_yr": 42.0,
+        "notes": "Western painted turtle (Testudines control)"
+      },
+      "assembly": {
+        "assembly_uid": "18436901",
+        "assembly_acc": "GCF_011386835.1",
+        "assembly_name": "ASM1138683v2",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 133555881,
+        "contig_n50": 13370154,
+        "taxid": "8478",
+        "is_refseq": true
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_088791.1",
+          "slen": 360060997,
+          "title": "Chrysemys picta bellii isolate R12L10 chromosome 1, ASM1138683v2, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_088792.1",
+          "slen": 291303948,
+          "title": "Chrysemys picta bellii isolate R12L10 chromosome 2, ASM1138683v2, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_088793.1",
+          "slen": 209633115,
+          "title": "Chrysemys picta bellii isolate R12L10 chromosome 3, ASM1138683v2, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {
+        "XRCC3": {
+          "acc": "XM_065593671.1",
+          "slen": 1429,
+          "title": "PREDICTED: Chrysemys picta bellii X-ray repair cross complementing 3 (XRCC3), transcript variant X2, mRNA"
+        },
+        "XRCC5": {
+          "acc": "XM_005279894.5",
+          "slen": 2579,
+          "title": "PREDICTED: Chrysemys picta bellii X-ray repair cross complementing 5 (XRCC5), transcript variant X1, mRNA"
+        },
+        "BARD1": {
+          "acc": "XM_065562138.1",
+          "slen": 3998,
+          "title": "PREDICTED: Chrysemys picta bellii BRCA1 associated RING domain 1 (BARD1), transcript variant X1, mRNA"
+        },
+        "DDB2": {
+          "acc": "XM_005302295.4",
+          "slen": 2886,
+          "title": "PREDICTED: Chrysemys picta bellii damage specific DNA binding protein 2 (DDB2), transcript variant X8, mRNA"
+        },
+        "FANCL": {
+          "acc": "XM_005312880.5",
+          "slen": 2531,
+          "title": "PREDICTED: Chrysemys picta bellii FA complementation group L (FANCL), transcript variant X1, mRNA"
+        },
+        "POLQ": {
+          "acc": "XM_008172329.4",
+          "slen": 8616,
+          "title": "PREDICTED: Chrysemys picta bellii DNA polymerase theta (POLQ), transcript variant X1, mRNA"
+        },
+        "POLE2": {
+          "acc": "XM_065593997.1",
+          "slen": 1979,
+          "title": "PREDICTED: Chrysemys picta bellii DNA polymerase epsilon 2, accessory subunit (POLE2), mRNA"
+        },
+        "RAD51B": {
+          "acc": "XM_065592930.1",
+          "slen": 3270,
+          "title": "PREDICTED: Chrysemys picta bellii RAD51 paralog B (RAD51B), transcript variant X19, mRNA"
+        },
+        "RAD23A": {
+          "acc": "XM_065575594.1",
+          "slen": 4184,
+          "title": "PREDICTED: Chrysemys picta bellii RAD23 homolog A, nucleotide excision repair protein (RAD23A), mRNA"
+        },
+        "RFC1": {
+          "acc": "XM_065598152.1",
+          "slen": 4044,
+          "title": "PREDICTED: Chrysemys picta bellii replication factor C subunit 1 (RFC1), mRNA"
+        },
+        "RHNO1": {
+          "acc": "XM_065584470.1",
+          "slen": 10021,
+          "title": "PREDICTED: Chrysemys picta bellii RAD9-HUS1-RAD1 interacting nuclear orphan 1 (RHNO1), transcript variant X2, mRNA"
+        },
+        "SIRT4": {
+          "acc": "XM_065568322.1",
+          "slen": 2111,
+          "title": "PREDICTED: Chrysemys picta bellii sirtuin 4 (SIRT4), transcript variant X2, mRNA"
+        },
+        "XAB2": {
+          "acc": "XM_005312758.4",
+          "slen": 3308,
+          "title": "PREDICTED: Chrysemys picta bellii XPA binding protein 2 (XAB2), mRNA"
+        },
+        "TP53": {
+          "acc": "XM_065570404.1",
+          "slen": 1386,
+          "title": "PREDICTED: Chrysemys picta bellii tumor protein p53 (TP53), partial mRNA"
+        },
+        "EGFR": {
+          "acc": "XM_005287322.5",
+          "slen": 12847,
+          "title": "PREDICTED: Chrysemys picta bellii epidermal growth factor receptor (EGFR), transcript variant X1, mRNA"
+        },
+        "HAS2": {
+          "acc": "XM_005288748.5",
+          "slen": 4278,
+          "title": "PREDICTED: Chrysemys picta bellii hyaluronan synthase 2 (HAS2), mRNA"
+        },
+        "PRKCA": {
+          "acc": "XM_008167621.4",
+          "slen": 5315,
+          "title": "PREDICTED: Chrysemys picta bellii protein kinase C alpha (PRKCA), transcript variant X2, mRNA"
+        },
+        "CPA3": null,
+        "BRCA1": {
+          "acc": "XM_024111368.3",
+          "slen": 7869,
+          "title": "PREDICTED: Chrysemys picta bellii BRCA1 DNA repair associated (BRCA1), transcript variant X2, mRNA"
+        },
+        "BRCA2": {
+          "acc": "XM_065594359.1",
+          "slen": 11070,
+          "title": "PREDICTED: Chrysemys picta bellii BRCA2 DNA repair associated (BRCA2), transcript variant X1, mRNA"
+        },
+        "PIK3CA": {
+          "acc": "XM_005285954.5",
+          "slen": 3885,
+          "title": "PREDICTED: Chrysemys picta bellii phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha (PIK3CA), transcript variant X2, mRNA"
+        },
+        "POT1": {
+          "acc": "XM_065555557.1",
+          "slen": 4753,
+          "title": "PREDICTED: Chrysemys picta bellii protection of telomeres 1 (POT1), transcript variant X13, mRNA"
+        },
+        "LSM11": {
+          "acc": "XM_065555153.1",
+          "slen": 10443,
+          "title": "PREDICTED: Chrysemys picta bellii LSM11, U7 small nuclear RNA associated (LSM11), mRNA"
+        },
+        "APOA1": {
+          "acc": "XM_005299744.4",
+          "slen": 1656,
+          "title": "PREDICTED: Chrysemys picta bellii apolipoprotein A1 (APOA1), mRNA"
+        },
+        "NCOR2": {
+          "acc": "XM_065568699.1",
+          "slen": 8153,
+          "title": "PREDICTED: Chrysemys picta bellii nuclear receptor corepressor 2 (NCOR2), transcript variant X33, mRNA"
+        },
+        "ALDH2": {
+          "acc": "XM_005298594.4",
+          "slen": 2304,
+          "title": "PREDICTED: Chrysemys picta bellii aldehyde dehydrogenase 2 family member (ALDH2), mRNA"
+        },
+        "NOX4": {
+          "acc": "XM_005304065.4",
+          "slen": 13735,
+          "title": "PREDICTED: Chrysemys picta bellii NADPH oxidase 4 (NOX4), transcript variant X3, mRNA"
+        },
+        "SOCS2": {
+          "acc": "XM_065575092.1",
+          "slen": 3390,
+          "title": "PREDICTED: Chrysemys picta bellii suppressor of cytokine signaling 2 (SOCS2), transcript variant X5, mRNA"
+        },
+        "GAPDH": {
+          "acc": "XM_005291303.5",
+          "slen": 1630,
+          "title": "PREDICTED: Chrysemys picta bellii glyceraldehyde-3-phosphate dehydrogenase (GAPDH), mRNA"
+        },
+        "ACTB": {
+          "acc": "XM_005289068.4",
+          "slen": 1961,
+          "title": "PREDICTED: Chrysemys picta bellii actin beta (ACTB), mRNA"
+        }
+      }
+    },
+    "Softshell_Turtle": {
+      "meta": {
+        "key": "Softshell_Turtle",
+        "scientific_name": "Pelodiscus sinensis",
+        "clade_group": "testudines_short",
+        "max_lifespan_yr": 25.0,
+        "notes": "Chinese softshell turtle (shorter-lived Testudines control)"
+      },
+      "assembly": {
+        "assembly_uid": "29770501",
+        "assembly_acc": "GCF_052426305.1",
+        "assembly_name": "ASM5242630v1",
+        "assembly_status": "Complete Genome",
+        "scaffold_n50": 132537830,
+        "contig_n50": 132537830,
+        "taxid": "13735",
+        "is_refseq": true
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_143052.1",
+          "slen": 361816179,
+          "title": "Pelodiscus sinensis isolate ZL-2025 chromosome 1, ASM5242630v1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_143053.1",
+          "slen": 265323564,
+          "title": "Pelodiscus sinensis isolate ZL-2025 chromosome 2, ASM5242630v1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_143054.1",
+          "slen": 202754362,
+          "title": "Pelodiscus sinensis isolate ZL-2025 chromosome 3, ASM5242630v1, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {
+        "XRCC3": {
+          "acc": "XM_075926492.2",
+          "slen": 4063,
+          "title": "PREDICTED: Pelodiscus sinensis X-ray repair cross complementing 3 (XRCC3), transcript variant X5, mRNA"
+        },
+        "XRCC5": {
+          "acc": "XM_075933031.2",
+          "slen": 3953,
+          "title": "PREDICTED: Pelodiscus sinensis X-ray repair cross complementing 5 (XRCC5), transcript variant X2, mRNA"
+        },
+        "BARD1": {
+          "acc": "XM_075933951.2",
+          "slen": 3734,
+          "title": "PREDICTED: Pelodiscus sinensis BRCA1 associated RING domain 1 (BARD1), transcript variant X1, mRNA"
+        },
+        "DDB2": {
+          "acc": "XM_075927656.2",
+          "slen": 2676,
+          "title": "PREDICTED: Pelodiscus sinensis damage specific DNA binding protein 2 (DDB2), transcript variant X1, mRNA"
+        },
+        "FANCL": {
+          "acc": "XM_089777519.1",
+          "slen": 2373,
+          "title": "PREDICTED: Pelodiscus sinensis FA complementation group L (FANCL), transcript variant X1, mRNA"
+        },
+        "POLQ": {
+          "acc": "XM_014578482.4",
+          "slen": 10080,
+          "title": "PREDICTED: Pelodiscus sinensis DNA polymerase theta (POLQ), transcript variant X1, mRNA"
+        },
+        "POLE2": {
+          "acc": "XM_075926159.2",
+          "slen": 1700,
+          "title": "PREDICTED: Pelodiscus sinensis DNA polymerase epsilon 2, accessory subunit (POLE2), mRNA"
+        },
+        "RAD51B": {
+          "acc": "XM_075927352.2",
+          "slen": 6687,
+          "title": "PREDICTED: Pelodiscus sinensis RAD51 paralog B (RAD51B), transcript variant X2, mRNA"
+        },
+        "RAD23A": {
+          "acc": "XM_075902380.2",
+          "slen": 3798,
+          "title": "PREDICTED: Pelodiscus sinensis RAD23 nucleotide excision repair protein A (RAD23A), transcript variant X1, mRNA"
+        },
+        "RFC1": {
+          "acc": "XM_075930561.2",
+          "slen": 4189,
+          "title": "PREDICTED: Pelodiscus sinensis replication factor C subunit 1 (RFC1), transcript variant X2, mRNA"
+        },
+        "RHNO1": {
+          "acc": "XM_014573606.4",
+          "slen": 5461,
+          "title": "PREDICTED: Pelodiscus sinensis RAD9-HUS1-RAD1 interacting nuclear orphan 1 (RHNO1), transcript variant X1, mRNA"
+        },
+        "SIRT4": {
+          "acc": "XM_075898111.2",
+          "slen": 1990,
+          "title": "PREDICTED: Pelodiscus sinensis sirtuin 4 (SIRT4), transcript variant X1, mRNA"
+        },
+        "XAB2": {
+          "acc": "XM_075902172.2",
+          "slen": 3177,
+          "title": "PREDICTED: Pelodiscus sinensis XPA binding protein 2 (XAB2), mRNA"
+        },
+        "TP53": {
+          "acc": "XM_075907745.2",
+          "slen": 1690,
+          "title": "PREDICTED: Pelodiscus sinensis tumor protein p53 (TP53), transcript variant X1, mRNA"
+        },
+        "EGFR": {
+          "acc": "XM_075921718.2",
+          "slen": 13458,
+          "title": "PREDICTED: Pelodiscus sinensis epidermal growth factor receptor (EGFR), transcript variant X1, mRNA"
+        },
+        "HAS2": {
+          "acc": "XM_006137506.5",
+          "slen": 4175,
+          "title": "PREDICTED: Pelodiscus sinensis hyaluronan synthase 2 (HAS2), mRNA"
+        },
+        "PRKCA": {
+          "acc": "XM_075903949.2",
+          "slen": 11684,
+          "title": "PREDICTED: Pelodiscus sinensis protein kinase C alpha (PRKCA), transcript variant X1, mRNA"
+        },
+        "CPA3": null,
+        "BRCA1": {
+          "acc": "XM_006125702.5",
+          "slen": 7942,
+          "title": "PREDICTED: Pelodiscus sinensis BRCA1 DNA repair associated (BRCA1), transcript variant X5, mRNA"
+        },
+        "BRCA2": {
+          "acc": "XM_089775563.1",
+          "slen": 13189,
+          "title": "PREDICTED: Pelodiscus sinensis BRCA2 DNA repair associated (BRCA2), transcript variant X5, mRNA"
+        },
+        "PIK3CA": {
+          "acc": "XM_075938017.2",
+          "slen": 10285,
+          "title": "PREDICTED: Pelodiscus sinensis phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha (PIK3CA), transcript variant X1, mRNA"
+        },
+        "POT1": {
+          "acc": "XM_075928396.2",
+          "slen": 4538,
+          "title": "PREDICTED: Pelodiscus sinensis protection of telomeres 1 (POT1), transcript variant X1, mRNA"
+        },
+        "LSM11": {
+          "acc": "XM_075900631.2",
+          "slen": 11114,
+          "title": "PREDICTED: Pelodiscus sinensis LSM11, U7 small nuclear RNA associated (LSM11), mRNA"
+        },
+        "APOA1": {
+          "acc": "XM_006121675.5",
+          "slen": 1282,
+          "title": "PREDICTED: Pelodiscus sinensis apolipoprotein A1 (APOA1), mRNA"
+        },
+        "NCOR2": {
+          "acc": "XM_075898504.2",
+          "slen": 9541,
+          "title": "PREDICTED: Pelodiscus sinensis nuclear receptor corepressor 2 (NCOR2), transcript variant X25, mRNA"
+        },
+        "ALDH2": {
+          "acc": "XM_075898738.2",
+          "slen": 2277,
+          "title": "PREDICTED: Pelodiscus sinensis aldehyde dehydrogenase 2 family member (ALDH2), mRNA"
+        },
+        "NOX4": {
+          "acc": "XM_006118376.4",
+          "slen": 8981,
+          "title": "PREDICTED: Pelodiscus sinensis NADPH oxidase 4 (NOX4), transcript variant X1, mRNA"
+        },
+        "SOCS2": {
+          "acc": "XM_075933296.2",
+          "slen": 2297,
+          "title": "PREDICTED: Pelodiscus sinensis suppressor of cytokine signaling 2 (SOCS2), transcript variant X3, mRNA"
+        },
+        "GAPDH": {
+          "acc": "NM_001286927.2",
+          "slen": 1204,
+          "title": "Pelodiscus sinensis glyceraldehyde-3-phosphate dehydrogenase (GAPDH), mRNA"
+        },
+        "ACTB": {
+          "acc": "XM_006112915.5",
+          "slen": 1851,
+          "title": "PREDICTED: Pelodiscus sinensis actin beta (ACTB), mRNA"
+        }
+      }
+    },
+    "Green_Anole": {
+      "meta": {
+        "key": "Green_Anole",
+        "scientific_name": "Anolis carolinensis",
+        "clade_group": "reptile_short",
+        "max_lifespan_yr": 7.2,
+        "notes": "Short-lived squamate reptile control"
+      },
+      "assembly": {
+        "assembly_uid": "20842221",
+        "assembly_acc": "GCF_035594765.1",
+        "assembly_name": "rAnoCar3.1.pri",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 288964324,
+        "contig_n50": 26091274,
+        "taxid": "28377",
+        "is_refseq": true
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_085841.1",
+          "slen": 368751108,
+          "title": "Anolis carolinensis isolate JA03-04 chromosome 1, rAnoCar3.1.pri, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_085842.1",
+          "slen": 324909582,
+          "title": "Anolis carolinensis isolate JA03-04 chromosome 2, rAnoCar3.1.pri, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_085843.1",
+          "slen": 288964324,
+          "title": "Anolis carolinensis isolate JA03-04 chromosome 3, rAnoCar3.1.pri, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {
+        "XRCC3": {
+          "acc": "XM_003214297.4",
+          "slen": 1585,
+          "title": "PREDICTED: Anolis carolinensis X-ray repair cross complementing 3 (xrcc3), transcript variant X1, mRNA"
+        },
+        "XRCC5": {
+          "acc": "XM_008118790.3",
+          "slen": 2937,
+          "title": "PREDICTED: Anolis carolinensis X-ray repair cross complementing 5 (xrcc5), transcript variant X1, mRNA"
+        },
+        "BARD1": {
+          "acc": "XM_008113531.3",
+          "slen": 3207,
+          "title": "PREDICTED: Anolis carolinensis BRCA1 associated RING domain 1 (bard1), mRNA"
+        },
+        "DDB2": {
+          "acc": "XM_008105003.3",
+          "slen": 2800,
+          "title": "PREDICTED: Anolis carolinensis damage specific DNA binding protein 2 (ddb2), transcript variant X1, mRNA"
+        },
+        "FANCL": {
+          "acc": "XM_016990726.2",
+          "slen": 3277,
+          "title": "PREDICTED: Anolis carolinensis FA complementation group L (fancl), transcript variant X1, mRNA"
+        },
+        "POLQ": {
+          "acc": "XM_008118353.3",
+          "slen": 8959,
+          "title": "PREDICTED: Anolis carolinensis DNA polymerase theta (polq), mRNA"
+        },
+        "POLE2": {
+          "acc": "XM_003227991.3",
+          "slen": 2433,
+          "title": "PREDICTED: Anolis carolinensis DNA polymerase epsilon 2, accessory subunit (pole2), mRNA"
+        },
+        "RAD51B": {
+          "acc": "XM_062968054.1",
+          "slen": 21411,
+          "title": "PREDICTED: Anolis carolinensis RAD51 paralog B (rad51b), transcript variant X5, mRNA"
+        },
+        "RAD23A": {
+          "acc": "XM_003216811.4",
+          "slen": 4148,
+          "title": "PREDICTED: Anolis carolinensis RAD23 homolog A, nucleotide excision repair protein (rad23a), mRNA"
+        },
+        "RFC1": {
+          "acc": "XM_062982230.1",
+          "slen": 4448,
+          "title": "PREDICTED: Anolis carolinensis replication factor C subunit 1 (rfc1), mRNA"
+        },
+        "RHNO1": null,
+        "SIRT4": {
+          "acc": "XM_062958782.1",
+          "slen": 1262,
+          "title": "PREDICTED: Anolis carolinensis sirtuin 4 (sirt4), mRNA"
+        },
+        "XAB2": {
+          "acc": "XM_003217062.3",
+          "slen": 3817,
+          "title": "PREDICTED: Anolis carolinensis XPA binding protein 2 (xab2), mRNA"
+        },
+        "TP53": {
+          "acc": "XM_062984541.1",
+          "slen": 2046,
+          "title": "PREDICTED: Anolis carolinensis tumor protein p53 (tp53), transcript variant X1, mRNA"
+        },
+        "EGFR": {
+          "acc": "XM_008112902.3",
+          "slen": 10520,
+          "title": "PREDICTED: Anolis carolinensis epidermal growth factor receptor (egfr), mRNA"
+        },
+        "HAS2": {
+          "acc": "XM_008116919.3",
+          "slen": 7365,
+          "title": "PREDICTED: Anolis carolinensis hyaluronan synthase 2 (has2), transcript variant X2, mRNA"
+        },
+        "PRKCA": {
+          "acc": "XM_062971147.1",
+          "slen": 12762,
+          "title": "PREDICTED: Anolis carolinensis protein kinase C alpha (prkca), transcript variant X1, mRNA"
+        },
+        "CPA3": null,
+        "BRCA1": {
+          "acc": "XM_008113175.3",
+          "slen": 5678,
+          "title": "PREDICTED: Anolis carolinensis BRCA1 DNA repair associated (brca1), transcript variant X1, mRNA"
+        },
+        "BRCA2": {
+          "acc": "XM_062974703.1",
+          "slen": 9028,
+          "title": "PREDICTED: Anolis carolinensis BRCA2 DNA repair associated (brca2), transcript variant X2, mRNA"
+        },
+        "PIK3CA": {
+          "acc": "XM_008105997.3",
+          "slen": 7791,
+          "title": "PREDICTED: Anolis carolinensis phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha (pik3ca), transcript variant X2, mRNA"
+        },
+        "POT1": {
+          "acc": "XM_008111229.3",
+          "slen": 3948,
+          "title": "PREDICTED: Anolis carolinensis protection of telomeres 1 (pot1), mRNA"
+        },
+        "LSM11": {
+          "acc": "XM_003223479.4",
+          "slen": 8191,
+          "title": "PREDICTED: Anolis carolinensis LSM11, U7 small nuclear RNA associated (lsm11), transcript variant X1, mRNA"
+        },
+        "APOA1": {
+          "acc": "XM_062960915.1",
+          "slen": 1158,
+          "title": "PREDICTED: Anolis carolinensis apolipoprotein A1 (apoa1), mRNA"
+        },
+        "NCOR2": {
+          "acc": "XM_062958549.1",
+          "slen": 13134,
+          "title": "PREDICTED: Anolis carolinensis nuclear receptor corepressor 2 (ncor2), transcript variant X15, mRNA"
+        },
+        "ALDH2": {
+          "acc": "XM_062958397.1",
+          "slen": 2026,
+          "title": "PREDICTED: Anolis carolinensis aldehyde dehydrogenase 2 family member (aldh2), mRNA"
+        },
+        "NOX4": {
+          "acc": "XM_003219369.4",
+          "slen": 2337,
+          "title": "PREDICTED: Anolis carolinensis NADPH oxidase 4 (nox4), transcript variant X1, mRNA"
+        },
+        "SOCS2": {
+          "acc": "XM_003221079.4",
+          "slen": 2776,
+          "title": "PREDICTED: Anolis carolinensis suppressor of cytokine signaling 2 (socs2), mRNA"
+        },
+        "GAPDH": {
+          "acc": "XM_062971765.1",
+          "slen": 1332,
+          "title": "PREDICTED: Anolis carolinensis glyceraldehyde-3-phosphate dehydrogenase (gapdh), mRNA"
+        },
+        "ACTB": {
+          "acc": "XM_062964539.1",
+          "slen": 2032,
+          "title": "PREDICTED: Anolis carolinensis actin beta (actb), mRNA"
+        }
+      }
+    },
+    "Wall_Lizard": {
+      "meta": {
+        "key": "Wall_Lizard",
+        "scientific_name": "Podarcis muralis",
+        "clade_group": "reptile_short",
+        "max_lifespan_yr": 8.0,
+        "notes": "Short-lived European wall lizard control"
+      },
+      "assembly": {
+        "assembly_uid": "2337881",
+        "assembly_acc": "GCF_004329235.1",
+        "assembly_name": "PodMur_1.0",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 92398148,
+        "contig_n50": 714612,
+        "taxid": "64176",
+        "is_refseq": true
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_135655.1",
+          "slen": 137271248,
+          "title": "Podarcis muralis chromosome 1, rPodMur119.hap1.1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_135656.1",
+          "slen": 126814402,
+          "title": "Podarcis muralis chromosome 2, rPodMur119.hap1.1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_135657.1",
+          "slen": 122509924,
+          "title": "Podarcis muralis chromosome 3, rPodMur119.hap1.1, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {
+        "XRCC3": {
+          "acc": "XM_028751075.2",
+          "slen": 2516,
+          "title": "PREDICTED: Podarcis muralis X-ray repair cross complementing 3 (XRCC3), transcript variant X5, mRNA"
+        },
+        "XRCC5": {
+          "acc": "XM_028742567.2",
+          "slen": 3529,
+          "title": "PREDICTED: Podarcis muralis X-ray repair cross complementing 5 (XRCC5), mRNA"
+        },
+        "BARD1": {
+          "acc": "XM_028704629.2",
+          "slen": 3283,
+          "title": "PREDICTED: Podarcis muralis BRCA1 associated RING domain 1 (BARD1), transcript variant X1, mRNA"
+        },
+        "DDB2": {
+          "acc": "XM_028726470.2",
+          "slen": 2467,
+          "title": "PREDICTED: Podarcis muralis damage specific DNA binding protein 2 (DDB2), transcript variant X1, mRNA"
+        },
+        "FANCL": {
+          "acc": "XM_028725138.2",
+          "slen": 1808,
+          "title": "PREDICTED: Podarcis muralis FA complementation group L (FANCL), transcript variant X2, mRNA"
+        },
+        "POLQ": {
+          "acc": "XM_077921355.1",
+          "slen": 8785,
+          "title": "PREDICTED: Podarcis muralis DNA polymerase theta (POLQ), transcript variant X3, mRNA"
+        },
+        "POLE2": {
+          "acc": "XM_028719068.2",
+          "slen": 1809,
+          "title": "PREDICTED: Podarcis muralis DNA polymerase epsilon 2, accessory subunit (POLE2), transcript variant X1, mRNA"
+        },
+        "RAD51B": {
+          "acc": "XM_028725428.2",
+          "slen": 6745,
+          "title": "PREDICTED: Podarcis muralis RAD51 paralog B (RAD51B), transcript variant X1, mRNA"
+        },
+        "RAD23A": {
+          "acc": "XM_028712689.2",
+          "slen": 2889,
+          "title": "PREDICTED: Podarcis muralis RAD23 nucleotide excision repair protein A (RAD23A), transcript variant X1, mRNA"
+        },
+        "RFC1": {
+          "acc": "XM_028745239.2",
+          "slen": 3937,
+          "title": "PREDICTED: Podarcis muralis replication factor C subunit 1 (RFC1), transcript variant X1, mRNA"
+        },
+        "RHNO1": null,
+        "SIRT4": {
+          "acc": "XM_028710382.2",
+          "slen": 2343,
+          "title": "PREDICTED: Podarcis muralis sirtuin 4 (SIRT4), transcript variant X2, mRNA"
+        },
+        "XAB2": {
+          "acc": "XM_028717254.2",
+          "slen": 2773,
+          "title": "PREDICTED: Podarcis muralis XPA binding protein 2 (XAB2), mRNA"
+        },
+        "TP53": {
+          "acc": "XM_077916832.1",
+          "slen": 2391,
+          "title": "PREDICTED: Podarcis muralis tumor protein p53 (TP53), transcript variant X1, mRNA"
+        },
+        "EGFR": {
+          "acc": "XM_028749907.2",
+          "slen": 10590,
+          "title": "PREDICTED: Podarcis muralis epidermal growth factor receptor (EGFR), transcript variant X1, mRNA"
+        },
+        "HAS2": {
+          "acc": "XM_028736222.2",
+          "slen": 5428,
+          "title": "PREDICTED: Podarcis muralis hyaluronan synthase 2 (HAS2), mRNA"
+        },
+        "PRKCA": {
+          "acc": "XM_077924027.1",
+          "slen": 8993,
+          "title": "PREDICTED: Podarcis muralis protein kinase C alpha (PRKCA), transcript variant X2, mRNA"
+        },
+        "CPA3": null,
+        "BRCA1": {
+          "acc": "XM_028701749.2",
+          "slen": 7136,
+          "title": "PREDICTED: Podarcis muralis BRCA1 DNA repair associated (BRCA1), transcript variant X1, mRNA"
+        },
+        "BRCA2": {
+          "acc": "XM_028726472.2",
+          "slen": 9650,
+          "title": "PREDICTED: Podarcis muralis BRCA2 DNA repair associated (BRCA2), mRNA"
+        },
+        "PIK3CA": {
+          "acc": "XM_028731614.2",
+          "slen": 6254,
+          "title": "PREDICTED: Podarcis muralis phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha (PIK3CA), transcript variant X2, mRNA"
+        },
+        "POT1": {
+          "acc": "XM_077935830.1",
+          "slen": 4067,
+          "title": "PREDICTED: Podarcis muralis protection of telomeres 1 (POT1), transcript variant X1, mRNA"
+        },
+        "LSM11": {
+          "acc": "XM_028718370.2",
+          "slen": 7263,
+          "title": "PREDICTED: Podarcis muralis LSM11, U7 small nuclear RNA associated (LSM11), mRNA"
+        },
+        "APOA1": {
+          "acc": "XM_028708461.2",
+          "slen": 1339,
+          "title": "PREDICTED: Podarcis muralis apolipoprotein A1 (APOA1), mRNA"
+        },
+        "NCOR2": {
+          "acc": "XM_028709370.2",
+          "slen": 13029,
+          "title": "PREDICTED: Podarcis muralis nuclear receptor corepressor 2 (NCOR2), transcript variant X11, mRNA"
+        },
+        "ALDH2": {
+          "acc": "XM_028741315.2",
+          "slen": 2141,
+          "title": "PREDICTED: Podarcis muralis aldehyde dehydrogenase 2 family member (ALDH2), transcript variant X1, mRNA"
+        },
+        "NOX4": {
+          "acc": "XM_077926977.1",
+          "slen": 2401,
+          "title": "PREDICTED: Podarcis muralis NADPH oxidase 4 (NOX4), transcript variant X1, mRNA"
+        },
+        "SOCS2": {
+          "acc": "XM_028746072.2",
+          "slen": 2704,
+          "title": "PREDICTED: Podarcis muralis suppressor of cytokine signaling 2 (SOCS2), transcript variant X1, mRNA"
+        },
+        "GAPDH": {
+          "acc": "XM_028712395.2",
+          "slen": 1299,
+          "title": "PREDICTED: Podarcis muralis glyceraldehyde-3-phosphate dehydrogenase (GAPDH), mRNA"
+        },
+        "ACTB": {
+          "acc": "XM_028705530.2",
+          "slen": 2023,
+          "title": "PREDICTED: Podarcis muralis actin beta (ACTB), mRNA"
+        }
+      }
+    },
+    "Human_T2T": {
+      "meta": {
+        "key": "Human_T2T",
+        "scientific_name": "Homo sapiens",
+        "clade_group": "mammal_long",
+        "max_lifespan_yr": 122.5,
+        "notes": "Human reference baseline (T2T-CHM13v2.0)"
+      },
+      "assembly": {
+        "assembly_uid": "12485191",
+        "assembly_acc": "GCF_009914755.1",
+        "assembly_name": "T2T-CHM13v2.0",
+        "assembly_status": "Complete Genome",
+        "scaffold_n50": 154259566,
+        "contig_n50": 154259566,
+        "taxid": "9606",
+        "is_refseq": true
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_060925.1",
+          "slen": 248387328,
+          "title": "Homo sapiens isolate CHM13 chromosome 1, alternate assembly T2T-CHM13v2.0"
+        },
+        {
+          "acc": "NC_060926.1",
+          "slen": 242696752,
+          "title": "Homo sapiens isolate CHM13 chromosome 2, alternate assembly T2T-CHM13v2.0"
+        },
+        {
+          "acc": "NC_060927.1",
+          "slen": 201105948,
+          "title": "Homo sapiens isolate CHM13 chromosome 3, alternate assembly T2T-CHM13v2.0"
+        },
+        {
+          "acc": "NC_060928.1",
+          "slen": 193574945,
+          "title": "Homo sapiens isolate CHM13 chromosome 4, alternate assembly T2T-CHM13v2.0"
+        },
+        {
+          "acc": "NC_060929.1",
+          "slen": 182045439,
+          "title": "Homo sapiens isolate CHM13 chromosome 5, alternate assembly T2T-CHM13v2.0"
+        }
+      ],
+      "genes": {
+        "XRCC3": {
+          "acc": "NM_001371231.1",
+          "slen": 2661,
+          "title": "Homo sapiens X-ray repair cross complementing 3 (XRCC3), transcript variant 5, mRNA"
+        },
+        "XRCC5": {
+          "acc": "NM_021141.4",
+          "slen": 3379,
+          "title": "Homo sapiens X-ray repair cross complementing 5 (XRCC5), mRNA"
+        },
+        "BARD1": {
+          "acc": "NM_001445545.1",
+          "slen": 5577,
+          "title": "Homo sapiens BRCA1 associated RING domain 1 (BARD1), transcript variant 9, mRNA"
+        },
+        "DDB2": {
+          "acc": "NM_001399874.1",
+          "slen": 1939,
+          "title": "Homo sapiens damage specific DNA binding protein 2 (DDB2), transcript variant 3, mRNA"
+        },
+        "FANCL": {
+          "acc": "NM_001374615.1",
+          "slen": 1703,
+          "title": "Homo sapiens FA complementation group L (FANCL), transcript variant 4, mRNA"
+        },
+        "POLQ": {
+          "acc": "NM_199420.4",
+          "slen": 8757,
+          "title": "Homo sapiens DNA polymerase theta (POLQ), mRNA"
+        },
+        "POLE2": {
+          "acc": "NM_001348385.2",
+          "slen": 1696,
+          "title": "Homo sapiens DNA polymerase epsilon 2, accessory subunit (POLE2), transcript variant 5, mRNA"
+        },
+        "RAD51B": {
+          "acc": "NM_001321814.2",
+          "slen": 3249,
+          "title": "Homo sapiens RAD51 paralog B (RAD51B), transcript variant 7, mRNA"
+        },
+        "RAD23A": {
+          "acc": "NM_005053.4",
+          "slen": 1772,
+          "title": "Homo sapiens RAD23 nucleotide excision repair protein A (RAD23A), transcript variant 1, mRNA"
+        },
+        "RFC1": {
+          "acc": "XM_054350679.1",
+          "slen": 5365,
+          "title": "PREDICTED: Homo sapiens replication factor C subunit 1 (RFC1), transcript variant X4, mRNA"
+        },
+        "RHNO1": {
+          "acc": "NM_001257097.2",
+          "slen": 2047,
+          "title": "Homo sapiens RAD9-HUS1-RAD1 interacting nuclear orphan 1 (RHNO1), transcript variant 4, mRNA"
+        },
+        "SIRT4": {
+          "acc": "NM_001385733.2",
+          "slen": 1913,
+          "title": "Homo sapiens sirtuin 4 (SIRT4), transcript variant 3, mRNA; nuclear gene for mitochondrial product"
+        },
+        "XAB2": {
+          "acc": "NM_020196.3",
+          "slen": 2647,
+          "title": "Homo sapiens XPA binding protein 2 (XAB2), mRNA"
+        },
+        "TP53": {
+          "acc": "NM_001407271.1",
+          "slen": 2658,
+          "title": "Homo sapiens tumor protein p53 (TP53), transcript variant 13, mRNA"
+        },
+        "EGFR": {
+          "acc": "NM_001346899.2",
+          "slen": 9770,
+          "title": "Homo sapiens epidermal growth factor receptor (EGFR), transcript variant 7, mRNA"
+        },
+        "HAS2": {
+          "acc": "NM_005328.3",
+          "slen": 4240,
+          "title": "Homo sapiens hyaluronan synthase 2 (HAS2), mRNA"
+        },
+        "PRKCA": {
+          "acc": "XM_054316646.1",
+          "slen": 22885,
+          "title": "PREDICTED: Homo sapiens protein kinase C alpha (PRKCA), transcript variant X10, mRNA"
+        },
+        "CPA3": {
+          "acc": "NM_001870.4",
+          "slen": 1762,
+          "title": "Homo sapiens carboxypeptidase A3 (CPA3), mRNA"
+        },
+        "BRCA1": {
+          "acc": "NM_007300.4",
+          "slen": 7151,
+          "title": "Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript variant 2, mRNA"
+        },
+        "BRCA2": {
+          "acc": "NM_000059.4",
+          "slen": 11954,
+          "title": "Homo sapiens BRCA2 DNA repair associated (BRCA2), transcript variant 1, mRNA"
+        },
+        "PIK3CA": {
+          "acc": "XM_054346845.1",
+          "slen": 27095,
+          "title": "PREDICTED: Homo sapiens phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha (PIK3CA), transcript variant X4, mRNA"
+        },
+        "POT1": {
+          "acc": "NM_015450.3",
+          "slen": 3924,
+          "title": "Homo sapiens protection of telomeres 1 (POT1), transcript variant 1, mRNA"
+        },
+        "LSM11": {
+          "acc": "NM_173491.4",
+          "slen": 6567,
+          "title": "Homo sapiens LSM11, U7 small nuclear RNA associated (LSM11), mRNA"
+        },
+        "APOA1": {
+          "acc": "NM_001425090.1",
+          "slen": 985,
+          "title": "Homo sapiens apolipoprotein A1 (APOA1), transcript variant 5, mRNA"
+        },
+        "NCOR2": {
+          "acc": "NM_006312.6",
+          "slen": 9001,
+          "title": "Homo sapiens nuclear receptor corepressor 2 (NCOR2), transcript variant 1, mRNA"
+        },
+        "ALDH2": {
+          "acc": "NM_000690.4",
+          "slen": 9561,
+          "title": "Homo sapiens aldehyde dehydrogenase 2 family member (ALDH2), transcript variant 1, mRNA; nuclear gene for mitochondrial product"
+        },
+        "NOX4": {
+          "acc": "NM_001143837.2",
+          "slen": 4550,
+          "title": "Homo sapiens NADPH oxidase 4 (NOX4), transcript variant 3, mRNA"
+        },
+        "SOCS2": {
+          "acc": "XM_054373717.1",
+          "slen": 4079,
+          "title": "PREDICTED: Homo sapiens suppressor of cytokine signaling 2 (SOCS2), transcript variant X10, mRNA"
+        },
+        "GAPDH": {
+          "acc": "NM_001289746.2",
+          "slen": 1525,
+          "title": "Homo sapiens glyceraldehyde-3-phosphate dehydrogenase (GAPDH), transcript variant 4, mRNA"
+        },
+        "ACTB": {
+          "acc": "NM_001101.5",
+          "slen": 1812,
+          "title": "Homo sapiens actin beta (ACTB), mRNA"
+        }
+      }
+    },
+    "African_Elephant": {
+      "meta": {
+        "key": "African_Elephant",
+        "scientific_name": "Loxodonta africana",
+        "clade_group": "mammal_peto",
+        "max_lifespan_yr": 70.0,
+        "notes": "Peto's paradox large mammal (multi-copy TP53)"
+      },
+      "assembly": {
+        "assembly_uid": "16599661",
+        "assembly_acc": "GCF_030014295.1",
+        "assembly_name": "mLoxAfr1.hap2",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 119600562,
+        "contig_n50": 82653632,
+        "taxid": "9785",
+        "is_refseq": true
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_087342.1",
+          "slen": 241857137,
+          "title": "Loxodonta africana isolate mLoxAfr1 chromosome 1, mLoxAfr1.hap2, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_087343.1",
+          "slen": 233670208,
+          "title": "Loxodonta africana isolate mLoxAfr1 chromosome 2, mLoxAfr1.hap2, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_087344.1",
+          "slen": 214621698,
+          "title": "Loxodonta africana isolate mLoxAfr1 chromosome 3, mLoxAfr1.hap2, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {
+        "XRCC3": {
+          "acc": "XM_064293046.1",
+          "slen": 7305,
+          "title": "PREDICTED: Loxodonta africana X-ray repair cross complementing 3 (XRCC3), transcript variant X5, mRNA"
+        },
+        "XRCC5": {
+          "acc": "XM_003405911.4",
+          "slen": 5897,
+          "title": "PREDICTED: Loxodonta africana X-ray repair cross complementing 5 (XRCC5), transcript variant X1, mRNA"
+        },
+        "BARD1": {
+          "acc": "XM_064286705.1",
+          "slen": 8325,
+          "title": "PREDICTED: Loxodonta africana BRCA1 associated RING domain 1 (BARD1), transcript variant X1, mRNA"
+        },
+        "DDB2": {
+          "acc": "XM_023550649.2",
+          "slen": 14150,
+          "title": "PREDICTED: Loxodonta africana damage specific DNA binding protein 2 (DDB2), transcript variant X1, mRNA"
+        },
+        "FANCL": {
+          "acc": "XM_003417567.4",
+          "slen": 12180,
+          "title": "PREDICTED: Loxodonta africana FA complementation group L (FANCL), transcript variant X2, mRNA"
+        },
+        "POLQ": {
+          "acc": "XM_064286733.1",
+          "slen": 9931,
+          "title": "PREDICTED: Loxodonta africana DNA polymerase theta (POLQ), transcript variant X2, mRNA"
+        },
+        "POLE2": {
+          "acc": "XM_023546143.2",
+          "slen": 1789,
+          "title": "PREDICTED: Loxodonta africana DNA polymerase epsilon 2, accessory subunit (POLE2), transcript variant X2, mRNA"
+        },
+        "RAD51B": {
+          "acc": "XM_023546295.2",
+          "slen": 19635,
+          "title": "PREDICTED: Loxodonta africana RAD51 paralog B (RAD51B), transcript variant X5, mRNA"
+        },
+        "RAD23A": {
+          "acc": "XM_003413063.4",
+          "slen": 1293,
+          "title": "PREDICTED: Loxodonta africana RAD23 homolog A, nucleotide excision repair protein (RAD23A), transcript variant X1, mRNA"
+        },
+        "RFC1": {
+          "acc": "XM_003411302.4",
+          "slen": 19922,
+          "title": "PREDICTED: Loxodonta africana replication factor C subunit 1 (RFC1), transcript variant X1, mRNA"
+        },
+        "RHNO1": {
+          "acc": "XM_064284731.1",
+          "slen": 1293,
+          "title": "PREDICTED: Loxodonta africana RAD9-HUS1-RAD1 interacting nuclear orphan 1 (RHNO1), mRNA"
+        },
+        "SIRT4": {
+          "acc": "XM_023559447.2",
+          "slen": 11123,
+          "title": "PREDICTED: Loxodonta africana sirtuin 4 (SIRT4), mRNA"
+        },
+        "XAB2": {
+          "acc": "XM_064280484.1",
+          "slen": 2698,
+          "title": "PREDICTED: Loxodonta africana XPA binding protein 2 (XAB2), mRNA"
+        },
+        "TP53": {
+          "acc": "XM_010596586.3",
+          "slen": 2316,
+          "title": "PREDICTED: Loxodonta africana tumor protein p53 (TP53), transcript variant X2, mRNA"
+        },
+        "EGFR": {
+          "acc": "XM_010587149.3",
+          "slen": 7684,
+          "title": "PREDICTED: Loxodonta africana epidermal growth factor receptor (EGFR), transcript variant X1, mRNA"
+        },
+        "HAS2": {
+          "acc": "XM_003408169.4",
+          "slen": 2824,
+          "title": "PREDICTED: Loxodonta africana hyaluronan synthase 2 (HAS2), mRNA"
+        },
+        "PRKCA": {
+          "acc": "XM_023556975.2",
+          "slen": 4252,
+          "title": "PREDICTED: Loxodonta africana protein kinase C alpha (PRKCA), transcript variant X2, mRNA"
+        },
+        "CPA3": {
+          "acc": "XM_003416213.4",
+          "slen": 2760,
+          "title": "PREDICTED: Loxodonta africana carboxypeptidase A3 (CPA3), mRNA"
+        },
+        "BRCA1": {
+          "acc": "XM_010594486.3",
+          "slen": 7156,
+          "title": "PREDICTED: Loxodonta africana BRCA1 DNA repair associated (BRCA1), transcript variant X2, mRNA"
+        },
+        "BRCA2": {
+          "acc": "XM_064269931.1",
+          "slen": 23985,
+          "title": "PREDICTED: Loxodonta africana BRCA2 DNA repair associated (BRCA2), mRNA"
+        },
+        "PIK3CA": {
+          "acc": "XM_064275503.1",
+          "slen": 17567,
+          "title": "PREDICTED: Loxodonta africana phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha (PIK3CA), transcript variant X2, mRNA"
+        },
+        "POT1": {
+          "acc": "XM_064289759.1",
+          "slen": 8159,
+          "title": "PREDICTED: Loxodonta africana protection of telomeres 1 (POT1), transcript variant X6, mRNA"
+        },
+        "LSM11": {
+          "acc": "XM_003404628.4",
+          "slen": 5867,
+          "title": "PREDICTED: Loxodonta africana LSM11, U7 small nuclear RNA associated (LSM11), mRNA"
+        },
+        "APOA1": {
+          "acc": "XM_064269035.1",
+          "slen": 5058,
+          "title": "PREDICTED: Loxodonta africana apolipoprotein A1 (APOA1), mRNA"
+        },
+        "NCOR2": {
+          "acc": "XM_064272083.1",
+          "slen": 17133,
+          "title": "PREDICTED: Loxodonta africana nuclear receptor corepressor 2 (NCOR2), transcript variant X27, mRNA"
+        },
+        "ALDH2": {
+          "acc": "XM_003420311.3",
+          "slen": 2002,
+          "title": "PREDICTED: Loxodonta africana aldehyde dehydrogenase 2 family member (ALDH2), mRNA"
+        },
+        "NOX4": {
+          "acc": "XM_003418556.4",
+          "slen": 3253,
+          "title": "PREDICTED: Loxodonta africana NADPH oxidase 4 (NOX4), mRNA"
+        },
+        "SOCS2": {
+          "acc": "XM_003405260.4",
+          "slen": 3201,
+          "title": "PREDICTED: Loxodonta africana suppressor of cytokine signaling 2 (SOCS2), transcript variant X1, mRNA"
+        },
+        "GAPDH": {
+          "acc": "XM_064284709.1",
+          "slen": 1287,
+          "title": "PREDICTED: Loxodonta africana glyceraldehyde-3-phosphate dehydrogenase (GAPDH), mRNA"
+        },
+        "ACTB": {
+          "acc": "XM_010596269.3",
+          "slen": 1733,
+          "title": "PREDICTED: Loxodonta africana actin beta (ACTB), mRNA"
+        }
+      }
+    },
+    "Naked_Mole_Rat": {
+      "meta": {
+        "key": "Naked_Mole_Rat",
+        "scientific_name": "Heterocephalus glaber",
+        "clade_group": "mammal_cancer_res",
+        "max_lifespan_yr": 37.0,
+        "is_immortal": false,
+        "notes": "Cancer-resistant extreme-longevity rodent (HAS2/hyaluronan)"
+      },
+      "assembly": {
+        "assembly_uid": "30727581",
+        "assembly_acc": "GCF_053883595.1",
+        "assembly_name": "H.glaber_assembly_v1.0",
+        "assembly_status": "Scaffold",
+        "scaffold_n50": 35055060,
+        "contig_n50": 32554440,
+        "taxid": "10181",
+        "is_refseq": true
+      },
+      "top_sequences": [
+        {
+          "acc": "NW_028258377.1",
+          "slen": 42699512,
+          "title": "Heterocephalus glaber isolate CG9 unplaced genomic scaffold, H.glaber_assembly_v1.0 deba00001606, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NW_028258379.1",
+          "slen": 41528620,
+          "title": "Heterocephalus glaber isolate CG9 unplaced genomic scaffold, H.glaber_assembly_v1.0 deba00001608, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NW_028258384.1",
+          "slen": 40415880,
+          "title": "Heterocephalus glaber isolate CG9 unplaced genomic scaffold, H.glaber_assembly_v1.0 deba00001613, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NW_028258381.1",
+          "slen": 40305384,
+          "title": "Heterocephalus glaber isolate CG9 unplaced genomic scaffold, H.glaber_assembly_v1.0 deba00001610, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NW_028258412.1",
+          "slen": 28226450,
+          "title": "Heterocephalus glaber isolate CG9 unplaced genomic scaffold, H.glaber_assembly_v1.0 deba00001687, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {
+        "XRCC3": {
+          "acc": "XM_087195171.1",
+          "slen": 9134,
+          "title": "PREDICTED: Heterocephalus glaber X-ray repair cross complementing 3 (Xrcc3), transcript variant X3, mRNA"
+        },
+        "XRCC5": {
+          "acc": "XM_087206141.1",
+          "slen": 2565,
+          "title": "PREDICTED: Heterocephalus glaber X-ray repair cross complementing 5 (Xrcc5), mRNA"
+        },
+        "BARD1": {
+          "acc": "XM_004851102.4",
+          "slen": 4252,
+          "title": "PREDICTED: Heterocephalus glaber BRCA1 associated RING domain 1 (Bard1), mRNA"
+        },
+        "DDB2": {
+          "acc": "XM_004851885.4",
+          "slen": 1788,
+          "title": "PREDICTED: Heterocephalus glaber damage specific DNA binding protein 2 (Ddb2), transcript variant X1, mRNA"
+        },
+        "FANCL": {
+          "acc": "XM_087216354.1",
+          "slen": 1424,
+          "title": "PREDICTED: Heterocephalus glaber FA complementation group L (Fancl), transcript variant X6, mRNA"
+        },
+        "POLQ": {
+          "acc": "XM_087209112.1",
+          "slen": 9544,
+          "title": "PREDICTED: Heterocephalus glaber DNA polymerase theta (Polq), transcript variant X2, mRNA"
+        },
+        "POLE2": {
+          "acc": "XM_087208062.1",
+          "slen": 1846,
+          "title": "PREDICTED: Heterocephalus glaber DNA polymerase epsilon 2, accessory subunit (Pole2), transcript variant X2, mRNA"
+        },
+        "RAD51B": {
+          "acc": "XM_087195306.1",
+          "slen": 7807,
+          "title": "PREDICTED: Heterocephalus glaber RAD51 paralog B (Rad51b), transcript variant X5, mRNA"
+        },
+        "RAD23A": {
+          "acc": "XM_087201510.1",
+          "slen": 2130,
+          "title": "PREDICTED: Heterocephalus glaber RAD23 nucleotide excision repair protein A (Rad23a), transcript variant X5, mRNA"
+        },
+        "RFC1": {
+          "acc": "XM_087187477.1",
+          "slen": 4083,
+          "title": "PREDICTED: Heterocephalus glaber replication factor C subunit 1 (Rfc1), transcript variant X1, mRNA"
+        },
+        "RHNO1": {
+          "acc": "XM_013067301.3",
+          "slen": 4526,
+          "title": "PREDICTED: Heterocephalus glaber RAD9-HUS1-RAD1 interacting nuclear orphan 1 (Rhno1), transcript variant X1, mRNA"
+        },
+        "SIRT4": {
+          "acc": "XM_087198206.1",
+          "slen": 1650,
+          "title": "PREDICTED: Heterocephalus glaber sirtuin 4 (Sirt4), transcript variant X2, mRNA"
+        },
+        "XAB2": {
+          "acc": "XM_004865346.4",
+          "slen": 2708,
+          "title": "PREDICTED: Heterocephalus glaber XPA binding protein 2 (Xab2), transcript variant X1, mRNA"
+        },
+        "TP53": {
+          "acc": "NM_001310270.1",
+          "slen": 2142,
+          "title": "Heterocephalus glaber tumor protein p53 (Tp53), mRNA"
+        },
+        "EGFR": {
+          "acc": "XM_004839841.3",
+          "slen": 5866,
+          "title": "PREDICTED: Heterocephalus glaber epidermal growth factor receptor (Egfr), transcript variant X1, mRNA"
+        },
+        "HAS2": {
+          "acc": "XM_004838010.3",
+          "slen": 4927,
+          "title": "PREDICTED: Heterocephalus glaber hyaluronan synthase 2 (Has2), mRNA"
+        },
+        "PRKCA": {
+          "acc": "XM_021248605.2",
+          "slen": 3687,
+          "title": "PREDICTED: Heterocephalus glaber protein kinase C alpha (Prkca), transcript variant X7, mRNA"
+        },
+        "CPA3": {
+          "acc": "XM_004834416.3",
+          "slen": 1729,
+          "title": "PREDICTED: Heterocephalus glaber carboxypeptidase A3 (Cpa3), mRNA"
+        },
+        "BRCA1": {
+          "acc": "XM_021240186.2",
+          "slen": 6765,
+          "title": "PREDICTED: Heterocephalus glaber BRCA1 DNA repair associated (Brca1), transcript variant X12, mRNA"
+        },
+        "BRCA2": {
+          "acc": "XM_004854764.3",
+          "slen": 10771,
+          "title": "PREDICTED: Heterocephalus glaber BRCA2 DNA repair associated (Brca2), transcript variant X1, mRNA"
+        },
+        "PIK3CA": {
+          "acc": "XM_087186551.1",
+          "slen": 10153,
+          "title": "PREDICTED: Heterocephalus glaber phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha (Pik3ca), transcript variant X4, mRNA"
+        },
+        "POT1": {
+          "acc": "XM_021237579.2",
+          "slen": 2522,
+          "title": "PREDICTED: Heterocephalus glaber protection of telomeres 1 (Pot1), transcript variant X4, mRNA"
+        },
+        "LSM11": {
+          "acc": "XM_087194906.1",
+          "slen": 3325,
+          "title": "PREDICTED: Heterocephalus glaber LSM11, U7 small nuclear RNA associated (Lsm11), mRNA"
+        },
+        "APOA1": {
+          "acc": "XM_004856644.4",
+          "slen": 1075,
+          "title": "PREDICTED: Heterocephalus glaber apolipoprotein A1 (Apoa1), mRNA"
+        },
+        "NCOR2": {
+          "acc": "XM_087198264.1",
+          "slen": 8685,
+          "title": "PREDICTED: Heterocephalus glaber nuclear receptor corepressor 2 (Ncor2), transcript variant X22, mRNA"
+        },
+        "ALDH2": {
+          "acc": "XM_004843781.4",
+          "slen": 2084,
+          "title": "PREDICTED: Heterocephalus glaber aldehyde dehydrogenase 2 family member (Aldh2), mRNA"
+        },
+        "NOX4": {
+          "acc": "XM_004868204.3",
+          "slen": 9877,
+          "title": "PREDICTED: Heterocephalus glaber NADPH oxidase 4 (Nox4), transcript variant X1, mRNA"
+        },
+        "SOCS2": {
+          "acc": "XM_021258468.2",
+          "slen": 2347,
+          "title": "PREDICTED: Heterocephalus glaber suppressor of cytokine signaling 2 (Socs2), transcript variant X2, mRNA"
+        },
+        "GAPDH": {
+          "acc": "XM_004869398.3",
+          "slen": 1233,
+          "title": "PREDICTED: Heterocephalus glaber glyceraldehyde-3-phosphate dehydrogenase (Gapdh), mRNA"
+        },
+        "ACTB": {
+          "acc": "XM_004840381.3",
+          "slen": 1809,
+          "title": "PREDICTED: Heterocephalus glaber actin beta (Actb), mRNA"
+        }
+      }
+    },
+    "House_Mouse": {
+      "meta": {
+        "key": "House_Mouse",
+        "scientific_name": "Mus musculus",
+        "clade_group": "mammal_short",
+        "max_lifespan_yr": 4.0,
+        "notes": "Short-lived mammal control"
+      },
+      "assembly": {
+        "assembly_uid": "32958081",
+        "assembly_acc": "GCA_056825265.1",
+        "assembly_name": "T2T_mhaESC_v1.5",
+        "assembly_status": "Complete Genome",
+        "scaffold_n50": 141298708,
+        "contig_n50": 141298708,
+        "taxid": "10092",
+        "is_refseq": false
+      },
+      "top_sequences": [
+        {
+          "acc": "CM166248.1",
+          "slen": 206961486,
+          "title": "Mus musculus domesticus strain C57BL/6 chromosome 1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM127231.1",
+          "slen": 197727081,
+          "title": "Mus musculus strain 129S1/SvImJ chromosome 1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM166249.1",
+          "slen": 188881415,
+          "title": "Mus musculus domesticus strain C57BL/6 chromosome 2, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM127232.1",
+          "slen": 180925124,
+          "title": "Mus musculus strain 129S1/SvImJ chromosome 2, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM127221.1",
+          "slen": 177799465,
+          "title": "Mus musculus strain C57BL/6J chromosome 2, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {
+        "XRCC3": {
+          "acc": "NM_028875.4",
+          "slen": 2433,
+          "title": "Mus musculus X-ray repair complementing 3 (Xrcc3), mRNA"
+        },
+        "XRCC5": {
+          "acc": "NM_001357519.1",
+          "slen": 2849,
+          "title": "Mus musculus X-ray repair complementing 5 (Xrcc5), transcript variant 2, mRNA"
+        },
+        "BARD1": {
+          "acc": "NM_007525.3",
+          "slen": 5448,
+          "title": "Mus musculus BRCA1 associated RING domain 1 (Bard1), transcript variant 1, mRNA"
+        },
+        "DDB2": {
+          "acc": "NM_028119.5",
+          "slen": 1929,
+          "title": "Mus musculus damage specific DNA binding protein 2 (Ddb2), transcript variant 1, mRNA"
+        },
+        "FANCL": {
+          "acc": "NM_025923.3",
+          "slen": 1798,
+          "title": "Mus musculus Fanconi anemia, complementation group L (Fancl), transcript variant 1, mRNA"
+        },
+        "POLQ": {
+          "acc": "NM_029977.2",
+          "slen": 8569,
+          "title": "Mus musculus polymerase (DNA directed), theta (Polq), transcript variant 1, mRNA"
+        },
+        "POLE2": {
+          "acc": "NM_011133.2",
+          "slen": 1695,
+          "title": "Mus musculus polymerase (DNA directed), epsilon 2 (p59 subunit) (Pole2), mRNA"
+        },
+        "RAD51B": {
+          "acc": "NM_009014.3",
+          "slen": 1858,
+          "title": "Mus musculus RAD51 paralog B (Rad51b), transcript variant 1, mRNA"
+        },
+        "RAD23A": {
+          "acc": "NM_001378896.1",
+          "slen": 2268,
+          "title": "Mus musculus RAD23 homolog A, nucleotide excision repair protein (Rad23a), transcript variant 6, mRNA"
+        },
+        "RFC1": {
+          "acc": "NM_001421209.1",
+          "slen": 4768,
+          "title": "Mus musculus replication factor C (activator 1) 1 (Rfc1), transcript variant 5, mRNA"
+        },
+        "RHNO1": {
+          "acc": "NM_001326586.1",
+          "slen": 2025,
+          "title": "Mus musculus RAD9-HUS1-RAD1 interacting nuclear orphan 1 (Rhno1), transcript variant 3, mRNA"
+        },
+        "SIRT4": {
+          "acc": "NM_001167691.1",
+          "slen": 1645,
+          "title": "Mus musculus sirtuin 4 (Sirt4), transcript variant 1, mRNA; nuclear gene for mitochondrial product"
+        },
+        "XAB2": {
+          "acc": "NM_026156.2",
+          "slen": 2654,
+          "title": "Mus musculus XPA binding protein 2 (Xab2), mRNA"
+        },
+        "TP53": {
+          "acc": "NM_001127233.2",
+          "slen": 1824,
+          "title": "Mus musculus transformation related protein 53 (Trp53), transcript variant 2, mRNA"
+        },
+        "EGFR": {
+          "acc": "NM_207655.2",
+          "slen": 5983,
+          "title": "Mus musculus epidermal growth factor receptor (Egfr), transcript variant 1, mRNA"
+        },
+        "HAS2": {
+          "acc": "NM_008216.3",
+          "slen": 4262,
+          "title": "Mus musculus hyaluronan synthase 2 (Has2), mRNA"
+        },
+        "PRKCA": {
+          "acc": "NM_011101.3",
+          "slen": 8385,
+          "title": "Mus musculus protein kinase C, alpha (Prkca), mRNA"
+        },
+        "CPA3": {
+          "acc": "NM_007753.2",
+          "slen": 1458,
+          "title": "Mus musculus carboxypeptidase A3, mast cell (Cpa3), mRNA"
+        },
+        "BRCA1": {
+          "acc": "NM_009764.3",
+          "slen": 6648,
+          "title": "Mus musculus breast cancer 1, early onset (Brca1), mRNA"
+        },
+        "BRCA2": {
+          "acc": "NM_001081001.2",
+          "slen": 11134,
+          "title": "Mus musculus breast cancer 2, early onset (Brca2), transcript variant 1, mRNA"
+        },
+        "PIK3CA": {
+          "acc": "NM_008839.3",
+          "slen": 6987,
+          "title": "Mus musculus phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha (Pik3ca), mRNA"
+        },
+        "POT1": {
+          "acc": "NM_133931.5",
+          "slen": 2938,
+          "title": "Mus musculus protection of telomeres 1A (Pot1a), mRNA"
+        },
+        "LSM11": {
+          "acc": "NM_028185.2",
+          "slen": 6453,
+          "title": "Mus musculus U7 snRNP-specific Sm-like protein LSM11 (Lsm11), mRNA"
+        },
+        "APOA1": {
+          "acc": "NM_009692.4",
+          "slen": 988,
+          "title": "Mus musculus apolipoprotein A-I (Apoa1), mRNA"
+        },
+        "NCOR2": {
+          "acc": "NM_011424.4",
+          "slen": 8714,
+          "title": "Mus musculus nuclear receptor co-repressor 2 (Ncor2), transcript variant 1, mRNA"
+        },
+        "ALDH2": {
+          "acc": "NM_009656.4",
+          "slen": 3883,
+          "title": "Mus musculus aldehyde dehydrogenase 2, mitochondrial (Aldh2), transcript variant 1, mRNA; nuclear gene for mitochondrial product"
+        },
+        "NOX4": {
+          "acc": "NM_001285833.1",
+          "slen": 3873,
+          "title": "Mus musculus NADPH oxidase 4 (Nox4), transcript variant 2, mRNA"
+        },
+        "SOCS2": {
+          "acc": "NM_007706.4",
+          "slen": 2222,
+          "title": "Mus musculus suppressor of cytokine signaling 2 (Socs2), transcript variant 1, mRNA"
+        },
+        "GAPDH": {
+          "acc": "NM_001411845.1",
+          "slen": 1633,
+          "title": "Mus musculus glyceraldehyde-3-phosphate dehydrogenase (Gapdh), transcript variant 8, mRNA"
+        },
+        "ACTB": {
+          "acc": "NM_007393.5",
+          "slen": 1935,
+          "title": "Mus musculus actin, beta (Actb), mRNA"
+        }
+      }
+    },
+    "Turquoise_Killifish": {
+      "meta": {
+        "key": "Turquoise_Killifish",
+        "scientific_name": "Nothobranchius furzeri",
+        "clade_group": "fish_ultrashort",
+        "max_lifespan_yr": 0.6,
+        "notes": "Shortest-lived vertebrate model (~6 months)"
+      },
+      "assembly": {
+        "assembly_uid": "24563961",
+        "assembly_acc": "GCF_043380555.1",
+        "assembly_name": "NfurGRZ-RIMD1",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 76394082,
+        "contig_n50": 9298000,
+        "taxid": "105023",
+        "is_refseq": true
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_091741.1",
+          "slen": 115738151,
+          "title": "Nothobranchius furzeri strain GRZ-AD chromosome 1, NfurGRZ-RIMD1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_091742.1",
+          "slen": 102493808,
+          "title": "Nothobranchius furzeri strain GRZ-AD chromosome 2, NfurGRZ-RIMD1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_091743.1",
+          "slen": 92942049,
+          "title": "Nothobranchius furzeri strain GRZ-AD chromosome 3, NfurGRZ-RIMD1, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {
+        "XRCC3": {
+          "acc": "XM_070548846.1",
+          "slen": 2971,
+          "title": "PREDICTED: Nothobranchius furzeri X-ray repair complementing defective repair in Chinese hamster cells 3 (xrcc3), transcript variant X2, mRNA"
+        },
+        "XRCC5": {
+          "acc": "XM_015966669.3",
+          "slen": 2563,
+          "title": "PREDICTED: Nothobranchius furzeri X-ray repair complementing defective repair in Chinese hamster cells 5 (xrcc5), mRNA"
+        },
+        "BARD1": {
+          "acc": "XM_015966707.2",
+          "slen": 2696,
+          "title": "PREDICTED: Nothobranchius furzeri BRCA1 associated RING domain 1 (bard1), mRNA"
+        },
+        "DDB2": {
+          "acc": "XM_015964345.3",
+          "slen": 1809,
+          "title": "PREDICTED: Nothobranchius furzeri damage-specific DNA binding protein 2 (ddb2), transcript variant X3, mRNA"
+        },
+        "FANCL": {
+          "acc": "XM_054750646.2",
+          "slen": 1827,
+          "title": "PREDICTED: Nothobranchius furzeri FA complementation group L (fancl), transcript variant X1, mRNA"
+        },
+        "POLQ": {
+          "acc": "XM_054751547.2",
+          "slen": 8488,
+          "title": "PREDICTED: Nothobranchius furzeri polymerase (DNA directed), theta (polq), transcript variant X1, mRNA"
+        },
+        "POLE2": {
+          "acc": "XM_015969838.3",
+          "slen": 1764,
+          "title": "PREDICTED: Nothobranchius furzeri polymerase (DNA directed), epsilon 2 (pole2), mRNA"
+        },
+        "RAD51B": null,
+        "RAD23A": null,
+        "RFC1": {
+          "acc": "XM_015954142.3",
+          "slen": 3786,
+          "title": "PREDICTED: Nothobranchius furzeri replication factor C (activator 1) 1 (rfc1), transcript variant X1, mRNA"
+        },
+        "RHNO1": {
+          "acc": "XM_015961002.3",
+          "slen": 1377,
+          "title": "PREDICTED: Nothobranchius furzeri RAD9-HUS1-RAD1 interacting nuclear orphan 1 (rhno1), mRNA"
+        },
+        "SIRT4": {
+          "acc": "XM_070549401.1",
+          "slen": 1324,
+          "title": "PREDICTED: Nothobranchius furzeri sirtuin 4 (sirt4), transcript variant X2, mRNA"
+        },
+        "XAB2": {
+          "acc": "XM_015948482.3",
+          "slen": 3133,
+          "title": "PREDICTED: Nothobranchius furzeri XPA binding protein 2 (xab2), mRNA"
+        },
+        "TP53": {
+          "acc": "NM_001323800.1",
+          "slen": 1227,
+          "title": "Nothobranchius furzeri tumor protein p53 (tp53), mRNA"
+        },
+        "EGFR": null,
+        "HAS2": {
+          "acc": "XM_070551784.1",
+          "slen": 4351,
+          "title": "PREDICTED: Nothobranchius furzeri hyaluronan synthase 2 (has2), transcript variant X1, mRNA"
+        },
+        "PRKCA": null,
+        "CPA3": null,
+        "BRCA1": null,
+        "BRCA2": {
+          "acc": "XM_070543534.1",
+          "slen": 9265,
+          "title": "PREDICTED: Nothobranchius furzeri BRCA2 DNA repair associated (brca2), transcript variant X1, mRNA"
+        },
+        "PIK3CA": {
+          "acc": "XM_015971070.3",
+          "slen": 3797,
+          "title": "PREDICTED: Nothobranchius furzeri phosphatidylinositol-4,5-bisphosphate 3-kinase, catalytic subunit alpha (pik3ca), mRNA"
+        },
+        "POT1": {
+          "acc": "XM_054746528.2",
+          "slen": 2658,
+          "title": "PREDICTED: Nothobranchius furzeri protection of telomeres 1 homolog (pot1), transcript variant X2, mRNA"
+        },
+        "LSM11": {
+          "acc": "XM_015975901.3",
+          "slen": 1383,
+          "title": "PREDICTED: Nothobranchius furzeri LSM11, U7 small nuclear RNA associated (lsm11), mRNA"
+        },
+        "APOA1": null,
+        "NCOR2": {
+          "acc": "XM_015972092.3",
+          "slen": 7518,
+          "title": "PREDICTED: Nothobranchius furzeri nuclear receptor corepressor 2 (ncor2), transcript variant X1, mRNA"
+        },
+        "ALDH2": null,
+        "NOX4": null,
+        "SOCS2": {
+          "acc": "XM_015963067.3",
+          "slen": 1099,
+          "title": "PREDICTED: Nothobranchius furzeri suppressor of cytokine signaling 2 (socs2), transcript variant X2, mRNA"
+        },
+        "GAPDH": {
+          "acc": "XM_015950201.3",
+          "slen": 1530,
+          "title": "PREDICTED: Nothobranchius furzeri glyceraldehyde-3-phosphate dehydrogenase (gapdh), mRNA"
+        },
+        "ACTB": null
+      }
+    },
+    "Ocean_Quahog": {
+      "meta": {
+        "key": "Ocean_Quahog",
+        "scientific_name": "Arctica islandica",
+        "clade_group": "mollusc_extreme",
+        "max_lifespan_yr": 507.0,
+        "is_immortal": false,
+        "notes": "Ming the Clam; longest-lived non-colonial animal (507 yr)"
+      },
+      "assembly": {
+        "assembly_uid": "35345111",
+        "assembly_acc": "GCA_060511605.1",
+        "assembly_name": "BTC_Aisl_2",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 86693296,
+        "contig_n50": 35396111,
+        "taxid": "59239",
+        "is_refseq": false
+      },
+      "top_sequences": [
+        {
+          "acc": "CM192519.1",
+          "slen": 122510001,
+          "title": "Arctica islandica isolate spArcIsl-1000001604 chromosome 1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM192520.1",
+          "slen": 109645774,
+          "title": "Arctica islandica isolate spArcIsl-1000001604 chromosome 2, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM192521.1",
+          "slen": 108627162,
+          "title": "Arctica islandica isolate spArcIsl-1000001604 chromosome 3, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM192522.1",
+          "slen": 108202008,
+          "title": "Arctica islandica isolate spArcIsl-1000001604 chromosome 4, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM192523.1",
+          "slen": 97076044,
+          "title": "Arctica islandica isolate spArcIsl-1000001604 chromosome 5, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM192524.1",
+          "slen": 93413905,
+          "title": "Arctica islandica isolate spArcIsl-1000001604 chromosome 6, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {}
+    },
+    "Greenland_Shark": {
+      "meta": {
+        "key": "Greenland_Shark",
+        "scientific_name": "Somniosus microcephalus",
+        "clade_group": "shark_extreme",
+        "max_lifespan_yr": 400.0,
+        "is_immortal": false,
+        "notes": "Longest-lived vertebrate (~400 yr; ~70% repeats falsification test)"
+      },
+      "assembly": {
+        "assembly_uid": "29722361",
+        "assembly_acc": "GCF_052327205.1",
+        "assembly_name": "FLI_Smic_1.0",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 240357632,
+        "contig_n50": 1075145,
+        "taxid": "191813",
+        "is_refseq": true
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_140987.1",
+          "slen": 464588503,
+          "title": "Somniosus microcephalus isolate GS21.2 chromosome 1, FLI_Smic_1.0, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_140988.1",
+          "slen": 392183907,
+          "title": "Somniosus microcephalus isolate GS21.2 chromosome 2, FLI_Smic_1.0, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_140989.1",
+          "slen": 383714890,
+          "title": "Somniosus microcephalus isolate GS21.2 chromosome 3, FLI_Smic_1.0, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_140990.1",
+          "slen": 352663881,
+          "title": "Somniosus microcephalus isolate GS21.2 chromosome 4, FLI_Smic_1.0, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_140991.1",
+          "slen": 322959062,
+          "title": "Somniosus microcephalus isolate GS21.2 chromosome 5, FLI_Smic_1.0, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_140992.1",
+          "slen": 282721366,
+          "title": "Somniosus microcephalus isolate GS21.2 chromosome 6, FLI_Smic_1.0, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {}
+    },
+    "Rougheye_Rockfish": {
+      "meta": {
+        "key": "Rougheye_Rockfish",
+        "scientific_name": "Sebastes aleutianus",
+        "clade_group": "fish_extreme",
+        "max_lifespan_yr": 205.0,
+        "is_immortal": false,
+        "notes": "205-yr Teleostei extreme (340x lifespan contrast vs Killifish)"
+      },
+      "assembly": {
+        "assembly_uid": "11057921",
+        "assembly_acc": "GCA_916700875.1",
+        "assembly_name": "S-aleutianus_SEB-111",
+        "assembly_status": "Scaffold",
+        "scaffold_n50": 34133339,
+        "contig_n50": 5849361,
+        "taxid": "214485",
+        "is_refseq": false,
+        "ftp_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/916/700/875/GCA_916700875.1_S-aleutianus_SEB-111",
+        "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/916/700/875/GCA_916700875.1_S-aleutianus_SEB-111/GCA_916700875.1_S-aleutianus_SEB-111_genomic.fna.gz"
+      },
+      "top_sequences": [
+        {
+          "acc": "CAKAKS010000074.1",
+          "slen": 43576409,
+          "title": "contig74 (unplaced-scaffold, na)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/916/700/875/GCA_916700875.1_S-aleutianus_SEB-111/GCA_916700875.1_S-aleutianus_SEB-111_genomic.fna.gz"
+        },
+        {
+          "acc": "CAKAKS010000072.1",
+          "slen": 42391494,
+          "title": "contig72 (unplaced-scaffold, na)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/916/700/875/GCA_916700875.1_S-aleutianus_SEB-111/GCA_916700875.1_S-aleutianus_SEB-111_genomic.fna.gz"
+        },
+        {
+          "acc": "CAKAKS010000070.1",
+          "slen": 42022858,
+          "title": "contig70 (unplaced-scaffold, na)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/916/700/875/GCA_916700875.1_S-aleutianus_SEB-111/GCA_916700875.1_S-aleutianus_SEB-111_genomic.fna.gz"
+        },
+        {
+          "acc": "CAKAKS010000039.1",
+          "slen": 39081110,
+          "title": "contig39 (unplaced-scaffold, na)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/916/700/875/GCA_916700875.1_S-aleutianus_SEB-111/GCA_916700875.1_S-aleutianus_SEB-111_genomic.fna.gz"
+        },
+        {
+          "acc": "CAKAKS010000006.1",
+          "slen": 38837484,
+          "title": "contig6 (unplaced-scaffold, na)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/916/700/875/GCA_916700875.1_S-aleutianus_SEB-111/GCA_916700875.1_S-aleutianus_SEB-111_genomic.fna.gz"
+        },
+        {
+          "acc": "CAKAKS010000066.1",
+          "slen": 37062907,
+          "title": "contig66 (unplaced-scaffold, na)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/916/700/875/GCA_916700875.1_S-aleutianus_SEB-111/GCA_916700875.1_S-aleutianus_SEB-111_genomic.fna.gz"
+        }
+      ],
+      "genes": {}
+    },
+    "Blue_Whale": {
+      "meta": {
+        "key": "Blue_Whale",
+        "scientific_name": "Balaenoptera musculus",
+        "clade_group": "mammal_peto",
+        "max_lifespan_yr": 110.0,
+        "is_immortal": false,
+        "notes": "Peto's paradox titan (~150 tons, ~110 yr)"
+      },
+      "assembly": {
+        "assembly_uid": "8220681",
+        "assembly_acc": "GCF_009873245.2",
+        "assembly_name": "mBalMus1.pri.v3",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 110314666,
+        "contig_n50": 6315640,
+        "taxid": "9771",
+        "is_refseq": true
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_045785.1",
+          "slen": 184938300,
+          "title": "Balaenoptera musculus isolate JJ_BM4_2016_0621 chromosome 1, mBalMus1.pri.v3, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_045786.1",
+          "slen": 175897734,
+          "title": "Balaenoptera musculus isolate JJ_BM4_2016_0621 chromosome 2, mBalMus1.pri.v3, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_045787.1",
+          "slen": 171266408,
+          "title": "Balaenoptera musculus isolate JJ_BM4_2016_0621 chromosome 3, mBalMus1.pri.v3, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_045788.1",
+          "slen": 144968589,
+          "title": "Balaenoptera musculus isolate JJ_BM4_2016_0621 chromosome 4, mBalMus1.pri.v3, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_045789.1",
+          "slen": 140689829,
+          "title": "Balaenoptera musculus isolate JJ_BM4_2016_0621 chromosome 5, mBalMus1.pri.v3, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_045806.1",
+          "slen": 128877148,
+          "title": "Balaenoptera musculus isolate JJ_BM4_2016_0621 chromosome X, mBalMus1.pri.v3, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {}
+    },
+    "American_Alligator": {
+      "meta": {
+        "key": "American_Alligator",
+        "scientific_name": "Alligator mississippiensis",
+        "clade_group": "archosaur_long",
+        "max_lifespan_yr": 75.0,
+        "is_immortal": false,
+        "notes": "Long-lived Archosaur sister-clade test for Testudines crystal"
+      },
+      "assembly": {
+        "assembly_uid": "18211701",
+        "assembly_acc": "GCF_030867095.1",
+        "assembly_name": "rAllMis1",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 255078640,
+        "contig_n50": 38556409,
+        "taxid": "8496",
+        "is_refseq": true
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_081824.1",
+          "slen": 486595084,
+          "title": "Alligator mississippiensis isolate rAllMis1 chromosome 1, rAllMis1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_081825.1",
+          "slen": 307635815,
+          "title": "Alligator mississippiensis isolate rAllMis1 chromosome 2, rAllMis1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_081826.1",
+          "slen": 303743212,
+          "title": "Alligator mississippiensis isolate rAllMis1 chromosome 3, rAllMis1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_081827.1",
+          "slen": 255078640,
+          "title": "Alligator mississippiensis isolate rAllMis1 chromosome 4, rAllMis1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_081828.1",
+          "slen": 220919336,
+          "title": "Alligator mississippiensis isolate rAllMis1 chromosome 5, rAllMis1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_081829.1",
+          "slen": 101387383,
+          "title": "Alligator mississippiensis isolate rAllMis1 chromosome 6, rAllMis1, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {}
+    },
+    "Greater_Mouse_Eared_Bat": {
+      "meta": {
+        "key": "Greater_Mouse_Eared_Bat",
+        "scientific_name": "Myotis myotis",
+        "clade_group": "mammal_bat",
+        "max_lifespan_yr": 37.0,
+        "is_immortal": false,
+        "notes": "Extreme lifespan-to-body-mass mammalian outlier (37 yr, ~25 g)"
+      },
+      "assembly": {
+        "assembly_uid": "31115001",
+        "assembly_acc": "GCA_014108235.2",
+        "assembly_name": "mMyoMyo1.pri",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 108649645,
+        "contig_n50": 12511134,
+        "taxid": "51298",
+        "is_refseq": false
+      },
+      "top_sequences": [
+        {
+          "acc": "CM138244.1",
+          "slen": 227467604,
+          "title": "Myotis myotis isolate mMyoMyo1 chromosome 1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM138245.1",
+          "slen": 218846388,
+          "title": "Myotis myotis isolate mMyoMyo1 chromosome 2, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM138246.1",
+          "slen": 217066114,
+          "title": "Myotis myotis isolate mMyoMyo1 chromosome 3, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM138265.1",
+          "slen": 131248058,
+          "title": "Myotis myotis isolate mMyoMyo1 chromosome X, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM138247.1",
+          "slen": 113662874,
+          "title": "Myotis myotis isolate mMyoMyo1 chromosome 4, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM138248.1",
+          "slen": 108649645,
+          "title": "Myotis myotis isolate mMyoMyo1 chromosome 5, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {}
+    },
+    "Hydra_Immortal": {
+      "meta": {
+        "key": "Hydra_Immortal",
+        "scientific_name": "Hydra vulgaris",
+        "clade_group": "cnidaria_immortal",
+        "max_lifespan_yr": null,
+        "is_immortal": true,
+        "notes": "Biologically non-senescent Cnidaria (continuous stem-cell renewal)"
+      },
+      "assembly": {
+        "assembly_uid": "22416111",
+        "assembly_acc": "GCF_038396675.1",
+        "assembly_name": "HydraT2T_AEP",
+        "assembly_status": "Complete Genome",
+        "scaffold_n50": 61145917,
+        "contig_n50": 61145917,
+        "taxid": "6087",
+        "is_refseq": true
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_088931.1",
+          "slen": 86977266,
+          "title": "Hydra vulgaris chromosome 12, alternate assembly HydraT2T_AEP"
+        },
+        {
+          "acc": "NC_088920.1",
+          "slen": 74121828,
+          "title": "Hydra vulgaris chromosome 01, alternate assembly HydraT2T_AEP"
+        },
+        {
+          "acc": "NC_088921.1",
+          "slen": 73066365,
+          "title": "Hydra vulgaris chromosome 02, alternate assembly HydraT2T_AEP"
+        },
+        {
+          "acc": "NC_088922.1",
+          "slen": 70902961,
+          "title": "Hydra vulgaris chromosome 03, alternate assembly HydraT2T_AEP"
+        },
+        {
+          "acc": "NC_088927.1",
+          "slen": 69506405,
+          "title": "Hydra vulgaris chromosome 08, alternate assembly HydraT2T_AEP"
+        },
+        {
+          "acc": "NC_088928.1",
+          "slen": 65083506,
+          "title": "Hydra vulgaris chromosome 09, alternate assembly HydraT2T_AEP"
+        }
+      ],
+      "genes": {}
+    },
+    "Immortal_Jellyfish": {
+      "meta": {
+        "key": "Immortal_Jellyfish",
+        "scientific_name": "Turritopsis dohrnii",
+        "clade_group": "cnidaria_immortal",
+        "max_lifespan_yr": null,
+        "is_immortal": true,
+        "notes": "Cyclic biological rejuvenation via transdifferentiation"
+      },
+      "assembly": {
+        "assembly_uid": "13765311",
+        "assembly_acc": "GCA_025167195.1",
+        "assembly_name": "ASM2516719v1",
+        "assembly_status": "Scaffold",
+        "scaffold_n50": 10410,
+        "contig_n50": 5048,
+        "taxid": "308579",
+        "is_refseq": false,
+        "ftp_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/025/167/195/GCA_025167195.1_ASM2516719v1",
+        "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/025/167/195/GCA_025167195.1_ASM2516719v1/GCA_025167195.1_ASM2516719v1_genomic.fna.gz"
+      },
+      "top_sequences": [
+        {
+          "acc": "GCA_025167195.1",
+          "slen": 40000000,
+          "max_scaffold_bp": 194465,
+          "n_scaffolds_total": 74821,
+          "n_scaffolds_ge5kb": 22706,
+          "title": "ASM2516719v1 WGS genomic pool (top 40.0 Mb from 74,821 scaffolds, max 194.5 kb)",
+          "source_mode": "ftp_genomic_pool",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/025/167/195/GCA_025167195.1_ASM2516719v1/GCA_025167195.1_ASM2516719v1_genomic.fna.gz"
+        }
+      ],
+      "genes": {}
+    },
+    "Pacific_Oyster": {
+      "meta": {
+        "key": "Pacific_Oyster",
+        "scientific_name": "Crassostrea gigas",
+        "clade_group": "mollusc_control",
+        "max_lifespan_yr": 20.0,
+        "is_immortal": false,
+        "notes": "Bivalvia control (25x lifespan contrast vs 507-yr Ocean Quahog)"
+      },
+      "assembly": {
+        "assembly_uid": "6155571",
+        "assembly_acc": "GCF_902806645.1",
+        "assembly_name": "cgigas_uk_roslin_v1",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 58462999,
+        "contig_n50": 1564469,
+        "taxid": "29159",
+        "is_refseq": true
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_088853.1",
+          "slen": 76070991,
+          "title": "Magallana gigas chromosome 1, xbMagGiga1.1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_088854.1",
+          "slen": 61469542,
+          "title": "Magallana gigas chromosome 2, xbMagGiga1.1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_088855.1",
+          "slen": 61039741,
+          "title": "Magallana gigas chromosome 3, xbMagGiga1.1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_088856.1",
+          "slen": 57946171,
+          "title": "Magallana gigas chromosome 4, xbMagGiga1.1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_088857.1",
+          "slen": 57274926,
+          "title": "Magallana gigas chromosome 5, xbMagGiga1.1, whole genome shotgun sequence"
+        },
+        {
+          "acc": "NC_088858.1",
+          "slen": 56905015,
+          "title": "Magallana gigas chromosome 6, xbMagGiga1.1, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {}
+    },
+    "Fruit_Fly": {
+      "meta": {
+        "key": "Fruit_Fly",
+        "scientific_name": "Drosophila melanogaster",
+        "clade_group": "invertebrate_short",
+        "max_lifespan_yr": 0.25,
+        "is_immortal": false,
+        "notes": "Unmethylated short-lived invertebrate control (3 months vs INF Cnidaria)"
+      },
+      "assembly": {
+        "assembly_uid": "34848961",
+        "assembly_acc": "GCA_059582545.1",
+        "assembly_name": "GUM",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 35120072,
+        "contig_n50": 21803554,
+        "taxid": "7227",
+        "is_refseq": false
+      },
+      "top_sequences": [
+        {
+          "acc": "CM184228.1",
+          "slen": 66361669,
+          "title": "Drosophila melanogaster strain KSA 2 chromosome 3, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM184238.1",
+          "slen": 64622130,
+          "title": "Drosophila melanogaster strain 140210231.134 chromosome 3, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM184233.1",
+          "slen": 64339753,
+          "title": "Drosophila melanogaster strain 14021-0231.198 chromosome 3, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM163446.1",
+          "slen": 37826296,
+          "title": "Drosophila melanogaster chromosome 3R, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM163440.1",
+          "slen": 36772226,
+          "title": "Drosophila melanogaster chromosome 3R, whole genome shotgun sequence"
+        },
+        {
+          "acc": "CM147277.1",
+          "slen": 36111541,
+          "title": "Drosophila melanogaster strain BDSC554 chromosome X, whole genome shotgun sequence"
+        }
+      ],
+      "genes": {}
+    }
+  }
+}
