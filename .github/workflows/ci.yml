@@ -1,0 +1,95 @@
+name: Zero-RNG Longevity Torus Verification
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  verify-zero-rng:
+    name: 64/64 Self-Tests, Zero-RNG AST & Archive Integrity
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install scientific dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install numpy scipy matplotlib
+
+      - name: 1. Static AST Zero-RNG & SHA-256 Engine Audit
+        run: |
+          python3 - <<'PY'
+          import ast, hashlib
+          from pathlib import Path
+
+          p = Path("tortoise_longevity_torus_v1_0.py")
+          raw = p.read_bytes()
+          sha = hashlib.sha256(raw).hexdigest()
+          expected = "e37fe87836a776efd62e6db6aa5c98dcd3fff7a3c7461e4426b987418d0c172c"
+          assert sha == expected, f"SHA-256 mismatch: {sha} != {expected}"
+
+          tree = ast.parse(raw.decode("utf-8"))
+          forbidden_mods = {"random", "secrets", "numpy.random"}
+          for node in ast.walk(tree):
+              if isinstance(node, ast.Import):
+                  for alias in node.names:
+                      assert alias.name not in forbidden_mods, f"Forbidden import: {alias.name}"
+              elif isinstance(node, ast.ImportFrom):
+                  mod = node.module or ""
+                  assert mod not in forbidden_mods and not mod.startswith("numpy.random"), f"Forbidden from-import: {mod}"
+              elif isinstance(node, ast.Attribute):
+                  assert node.attr not in {"default_rng", "RandomState"}, f"Forbidden RNG attribute: {node.attr}"
+          print(f"[PASS] Zero-RNG AST clean | Engine SHA-256 verified: {sha}")
+          PY
+
+      - name: 2. Run All 64/64 Closed-Form Algebraic Self-Tests
+        run: python3 tortoise_longevity_torus_v1_0.py --self-test
+
+      - name: 3. Verify 22-Species Checkpoints, Theorems & Figures
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          manifest = json.loads(Path("tortoise_ncbi_manifest.json").read_text(encoding="utf-8"))
+          assert len(manifest.get("species", {})) >= 22, "Manifest has <22 species"
+
+          ckpts = list(Path("chr_audit_cache").glob("*.json"))
+          genes = list(Path("gene_cache").glob("*.fna.gz"))
+          figs = sorted(p.name for p in Path("results_tortoise_v1_4/figures").glob("fig_L*.png"))
+          assert len(ckpts) == 65, f"Expected 65 chr_audit_cache JSONs, found {len(ckpts)}"
+          assert len(genes) == 338, f"Expected 338 gene_cache transcripts, found {len(genes)}"
+          assert len(figs) == 5, f"Expected 5 publication PNG figures, found {len(figs)}: {figs}"
+          assert Path("longevity_torus_v1_5.pdf").stat().st_size > 1_000_000
+          assert Path("longevity_torus_v1_5.tex").stat().st_size > 50_000
+
+          ext = json.loads(Path("results_tortoise_v1_4/extremes_immortals_audit.json").read_text(encoding="utf-8"))
+          assert ext["n_species_total"] == 22
+          assert ext["n_mortal_vertebrates"] == 17
+          assert ext["n_sauropsids"] == 8
+          assert ext["n_immortals"] == 2
+          s3600 = next(t for t in ext["lifespan_tests_L7"] if t["metric"] == "euch_nonenv_3600_unb")
+          assert abs(s3600["sauropsids_raw"]["rho"] - (-1.0)) < 1e-12
+          assert ext["fdr_ledger_L7"]["m_total_tests"] == 32
+          assert ext["fdr_ledger_L7"]["n_bh_sig_q05"] == 3
+
+          deep = json.loads(Path("results_tortoise_v1_4/deep_toric_physics_L8.json").read_text(encoding="utf-8"))
+          assert deep["n_species"] == 22
+          assert len(deep["evolutionary_clock_L8"]) == 13
+          min_split = min(r["split_half"]["cos_beyond_M2_L_vs_R"] for r in deep["deep_species_rows"])
+          assert min_split >= 0.98, f"Split-half reliability dropped below 0.98: {min_split}"
+          iso = deep["metazoan_invariants_L5d_L8bc"]["thmL8b_isotropy_447_512"]["exact_ceiling"]
+          assert abs(iso - 447.0 / 512.0) < 1e-12
+
+          print(f"[PASS] 22 species | 65 checkpoints | 338 transcripts | 5 figures | Sauropsid rho=-1.000 | min split-half cos={min_split:.4f}")
+          PY
