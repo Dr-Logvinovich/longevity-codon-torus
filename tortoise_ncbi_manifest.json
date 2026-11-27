@@ -2792,6 +2792,468 @@
         }
       ],
       "genes": {}
+    },
+    "Malaria_Mosquito": {
+      "meta": {
+        "key": "Malaria_Mosquito",
+        "scientific_name": "Anopheles gambiae",
+        "clade_group": "diptera_compact",
+        "max_lifespan_yr": 0.15,
+        "is_immortal": false,
+        "notes": "Diptera sister control to Drosophila (compact unmethylated genome)"
+      },
+      "assembly": {
+        "assembly_uid": "15480831",
+        "assembly_acc": "GCF_943734735.2",
+        "assembly_name": "idAnoGambNW_F1_1",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 99149756,
+        "contig_n50": 10625458,
+        "taxid": "7165",
+        "is_refseq": true,
+        "ftp_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/943/734/735/GCF_943734735.2_idAnoGambNW_F1_1",
+        "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/943/734/735/GCF_943734735.2_idAnoGambNW_F1_1/GCF_943734735.2_idAnoGambNW_F1_1_genomic.fna.gz"
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_064601.1",
+          "slen": 118196952,
+          "title": "2RL (assembled-molecule, 2)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/943/734/735/GCF_943734735.2_idAnoGambNW_F1_1/GCF_943734735.2_idAnoGambNW_F1_1_genomic.fna.gz"
+        },
+        {
+          "acc": "NC_064602.1",
+          "slen": 99149756,
+          "title": "3RL (assembled-molecule, 3)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/943/734/735/GCF_943734735.2_idAnoGambNW_F1_1/GCF_943734735.2_idAnoGambNW_F1_1_genomic.fna.gz"
+        },
+        {
+          "acc": "NC_064600.1",
+          "slen": 28097889,
+          "title": "X (assembled-molecule, X)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/943/734/735/GCF_943734735.2_idAnoGambNW_F1_1/GCF_943734735.2_idAnoGambNW_F1_1_genomic.fna.gz"
+        },
+        {
+          "acc": "NW_026902553.1",
+          "slen": 2164118,
+          "title": "X_unloc_1 (unlocalized-scaffold, X)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/943/734/735/GCF_943734735.2_idAnoGambNW_F1_1/GCF_943734735.2_idAnoGambNW_F1_1_genomic.fna.gz"
+        },
+        {
+          "acc": "NW_026902714.1",
+          "slen": 1857981,
+          "title": "scaffold_12 (unplaced-scaffold, na)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/943/734/735/GCF_943734735.2_idAnoGambNW_F1_1/GCF_943734735.2_idAnoGambNW_F1_1_genomic.fna.gz"
+        },
+        {
+          "acc": "NW_026902715.1",
+          "slen": 1006555,
+          "title": "scaffold_14 (unplaced-scaffold, na)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/943/734/735/GCF_943734735.2_idAnoGambNW_F1_1/GCF_943734735.2_idAnoGambNW_F1_1_genomic.fna.gz"
+        }
+      ],
+      "genes": {}
+    },
+    "Yellow_Fever_Mosquito": {
+      "meta": {
+        "key": "Yellow_Fever_Mosquito",
+        "scientific_name": "Aedes aegypti",
+        "clade_group": "diptera_repeat_rich",
+        "max_lifespan_yr": 0.15,
+        "is_immortal": false,
+        "notes": "Repeat-rich giant Diptera (~310 Mb chr1) vs compact Drosophila"
+      },
+      "assembly": {
+        "assembly_uid": "1141061",
+        "assembly_acc": "GCF_002204515.2",
+        "assembly_name": "AaegL5.0",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 409777670,
+        "contig_n50": 11758062,
+        "taxid": "7159",
+        "is_refseq": true,
+        "ftp_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/204/515/GCF_002204515.2_AaegL5.0",
+        "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/204/515/GCF_002204515.2_AaegL5.0/GCF_002204515.2_AaegL5.0_genomic.fna.gz"
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_035108.1",
+          "slen": 474425716,
+          "title": "AGWG_AaegL5_hic_chr_2_PBJ_arrow (assembled-molecule, 2)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/204/515/GCF_002204515.2_AaegL5.0/GCF_002204515.2_AaegL5.0_genomic.fna.gz"
+        },
+        {
+          "acc": "NC_035109.1",
+          "slen": 409777670,
+          "title": "AGWG_AaegL5_hic_chr_3_PBJ_arrow (assembled-molecule, 3)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/204/515/GCF_002204515.2_AaegL5.0/GCF_002204515.2_AaegL5.0_genomic.fna.gz"
+        },
+        {
+          "acc": "NC_035107.1",
+          "slen": 310827022,
+          "title": "AGWG_AaegL5_hic_chr_1_PBJ_arrow (assembled-molecule, 1)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/204/515/GCF_002204515.2_AaegL5.0/GCF_002204515.2_AaegL5.0_genomic.fna.gz"
+        },
+        {
+          "acc": "NIGP01002590.1",
+          "slen": 3083118,
+          "title": "AGWG_AaegL5_000073F_quiver_arrow (alt-scaffold, 2)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/204/515/GCF_002204515.2_AaegL5.0/GCF_002204515.2_AaegL5.0_genomic.fna.gz"
+        },
+        {
+          "acc": "NIGP01002766.1",
+          "slen": 2492290,
+          "title": "AGWG_AaegL5_000117F_quiver_arrow (alt-scaffold, 3)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/204/515/GCF_002204515.2_AaegL5.0/GCF_002204515.2_AaegL5.0_genomic.fna.gz"
+        },
+        {
+          "acc": "NIGP01002845.1",
+          "slen": 2230773,
+          "title": "AGWG_AaegL5_000151F_quiver_arrow (alt-scaffold, 1)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/204/515/GCF_002204515.2_AaegL5.0/GCF_002204515.2_AaegL5.0_genomic.fna.gz"
+        }
+      ],
+      "genes": {}
+    },
+    "Honeybee": {
+      "meta": {
+        "key": "Honeybee",
+        "scientific_name": "Apis mellifera",
+        "clade_group": "hymenoptera_social",
+        "max_lifespan_yr": 8.0,
+        "is_immortal": false,
+        "notes": "Functional CpG methylation; queen 5-8 yr vs worker weeks"
+      },
+      "assembly": {
+        "assembly_uid": "1949871",
+        "assembly_acc": "GCF_003254395.2",
+        "assembly_name": "Amel_HAv3.1",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 13619445,
+        "contig_n50": 5382476,
+        "taxid": "7460",
+        "is_refseq": true,
+        "ftp_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/254/395/GCF_003254395.2_Amel_HAv3.1",
+        "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/254/395/GCF_003254395.2_Amel_HAv3.1/GCF_003254395.2_Amel_HAv3.1_genomic.fna.gz"
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_037638.1",
+          "slen": 27754200,
+          "title": "Group1 (assembled-molecule, LG1)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/254/395/GCF_003254395.2_Amel_HAv3.1/GCF_003254395.2_Amel_HAv3.1_genomic.fna.gz"
+        },
+        {
+          "acc": "NC_037643.1",
+          "slen": 17789102,
+          "title": "Group6 (assembled-molecule, LG6)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/254/395/GCF_003254395.2_Amel_HAv3.1/GCF_003254395.2_Amel_HAv3.1_genomic.fna.gz"
+        },
+        {
+          "acc": "NC_037648.1",
+          "slen": 16352600,
+          "title": "Group11 (assembled-molecule, LG11)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/254/395/GCF_003254395.2_Amel_HAv3.1/GCF_003254395.2_Amel_HAv3.1_genomic.fna.gz"
+        },
+        {
+          "acc": "NC_037639.1",
+          "slen": 16089512,
+          "title": "Group2 (assembled-molecule, LG2)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/254/395/GCF_003254395.2_Amel_HAv3.1/GCF_003254395.2_Amel_HAv3.1_genomic.fna.gz"
+        },
+        {
+          "acc": "NC_037644.1",
+          "slen": 14198698,
+          "title": "Group7 (assembled-molecule, LG7)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/254/395/GCF_003254395.2_Amel_HAv3.1/GCF_003254395.2_Amel_HAv3.1_genomic.fna.gz"
+        },
+        {
+          "acc": "NC_037642.1",
+          "slen": 13896941,
+          "title": "Group5 (assembled-molecule, LG5)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/254/395/GCF_003254395.2_Amel_HAv3.1/GCF_003254395.2_Amel_HAv3.1_genomic.fna.gz"
+        }
+      ],
+      "genes": {}
+    },
+    "Black_Garden_Ant": {
+      "meta": {
+        "key": "Black_Garden_Ant",
+        "scientific_name": "Lasius niger",
+        "clade_group": "hymenoptera_ant",
+        "max_lifespan_yr": 28.8,
+        "is_immortal": false,
+        "notes": "Record insect longevity in AnAge (queen ~28.8 yr)"
+      },
+      "assembly": {
+        "assembly_uid": "23747601",
+        "assembly_acc": "GCA_041902855.1",
+        "assembly_name": "ASM4190285v1",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 19672953,
+        "contig_n50": 4444717,
+        "taxid": "67767",
+        "is_refseq": false,
+        "ftp_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/041/902/855/GCA_041902855.1_ASM4190285v1",
+        "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/041/902/855/GCA_041902855.1_ASM4190285v1/GCA_041902855.1_ASM4190285v1_genomic.fna.gz"
+      },
+      "top_sequences": [
+        {
+          "acc": "CM086004.1",
+          "slen": 24881522,
+          "title": "Chr1 (assembled-molecule, 1)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/041/902/855/GCA_041902855.1_ASM4190285v1/GCA_041902855.1_ASM4190285v1_genomic.fna.gz"
+        },
+        {
+          "acc": "CM086005.1",
+          "slen": 22845038,
+          "title": "Chr2 (assembled-molecule, 2)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/041/902/855/GCA_041902855.1_ASM4190285v1/GCA_041902855.1_ASM4190285v1_genomic.fna.gz"
+        },
+        {
+          "acc": "CM086006.1",
+          "slen": 21830159,
+          "title": "Chr3 (assembled-molecule, 3)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/041/902/855/GCA_041902855.1_ASM4190285v1/GCA_041902855.1_ASM4190285v1_genomic.fna.gz"
+        },
+        {
+          "acc": "CM086007.1",
+          "slen": 20895554,
+          "title": "Chr4 (assembled-molecule, 4)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/041/902/855/GCA_041902855.1_ASM4190285v1/GCA_041902855.1_ASM4190285v1_genomic.fna.gz"
+        },
+        {
+          "acc": "CM086008.1",
+          "slen": 20886082,
+          "title": "Chr5 (assembled-molecule, 5)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/041/902/855/GCA_041902855.1_ASM4190285v1/GCA_041902855.1_ASM4190285v1_genomic.fna.gz"
+        },
+        {
+          "acc": "CM086009.1",
+          "slen": 19705596,
+          "title": "Chr6 (assembled-molecule, 6)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/041/902/855/GCA_041902855.1_ASM4190285v1/GCA_041902855.1_ASM4190285v1_genomic.fna.gz"
+        }
+      ],
+      "genes": {}
+    },
+    "Fire_Ant": {
+      "meta": {
+        "key": "Fire_Ant",
+        "scientific_name": "Solenopsis invicta",
+        "clade_group": "hymenoptera_ant",
+        "max_lifespan_yr": 7.0,
+        "is_immortal": false,
+        "notes": "Chromosome-level RefSeq eusocial ant (queen ~7 yr)"
+      },
+      "assembly": {
+        "assembly_uid": "9219761",
+        "assembly_acc": "GCF_016802725.1",
+        "assembly_name": "UNIL_Sinv_3.0",
+        "assembly_status": "Chromosome",
+        "scaffold_n50": 26227205,
+        "contig_n50": 9421447,
+        "taxid": "13686",
+        "is_refseq": true,
+        "ftp_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/016/802/725/GCF_016802725.1_UNIL_Sinv_3.0",
+        "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/016/802/725/GCF_016802725.1_UNIL_Sinv_3.0/GCF_016802725.1_UNIL_Sinv_3.0_genomic.fna.gz"
+      },
+      "top_sequences": [
+        {
+          "acc": "NC_052664.1",
+          "slen": 33177226,
+          "title": "chr1 (assembled-molecule, 1)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/016/802/725/GCF_016802725.1_UNIL_Sinv_3.0/GCF_016802725.1_UNIL_Sinv_3.0_genomic.fna.gz"
+        },
+        {
+          "acc": "NC_052666.1",
+          "slen": 32991433,
+          "title": "chr3 (assembled-molecule, 3)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/016/802/725/GCF_016802725.1_UNIL_Sinv_3.0/GCF_016802725.1_UNIL_Sinv_3.0_genomic.fna.gz"
+        },
+        {
+          "acc": "NC_052667.1",
+          "slen": 29136123,
+          "title": "chr4 (assembled-molecule, 4)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/016/802/725/GCF_016802725.1_UNIL_Sinv_3.0/GCF_016802725.1_UNIL_Sinv_3.0_genomic.fna.gz"
+        },
+        {
+          "acc": "NC_052668.1",
+          "slen": 28503674,
+          "title": "chr5 (assembled-molecule, 5)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/016/802/725/GCF_016802725.1_UNIL_Sinv_3.0/GCF_016802725.1_UNIL_Sinv_3.0_genomic.fna.gz"
+        },
+        {
+          "acc": "NC_052665.1",
+          "slen": 26469689,
+          "title": "chr2 (assembled-molecule, 2)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/016/802/725/GCF_016802725.1_UNIL_Sinv_3.0/GCF_016802725.1_UNIL_Sinv_3.0_genomic.fna.gz"
+        },
+        {
+          "acc": "NC_052669.1",
+          "slen": 26405556,
+          "title": "chr6 (assembled-molecule, 6)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/016/802/725/GCF_016802725.1_UNIL_Sinv_3.0/GCF_016802725.1_UNIL_Sinv_3.0_genomic.fna.gz"
+        }
+      ],
+      "genes": {}
+    },
+    "Dampwood_Termite": {
+      "meta": {
+        "key": "Dampwood_Termite",
+        "scientific_name": "Zootermopsis nevadensis",
+        "clade_group": "blattodea_termite",
+        "max_lifespan_yr": 15.0,
+        "is_immortal": false,
+        "notes": "Independent non-Hymenoptera eusocial longevity (queen ~15 yr)"
+      },
+      "assembly": {
+        "assembly_uid": "182481",
+        "assembly_acc": "GCF_000696155.1",
+        "assembly_name": "ZooNev1.0",
+        "assembly_status": "Scaffold",
+        "scaffold_n50": 751105,
+        "contig_n50": 22794,
+        "taxid": "136037",
+        "is_refseq": true,
+        "ftp_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/696/155/GCF_000696155.1_ZooNev1.0",
+        "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/696/155/GCF_000696155.1_ZooNev1.0/GCF_000696155.1_ZooNev1.0_genomic.fna.gz"
+      },
+      "top_sequences": [
+        {
+          "acc": "GCF_000696155.1",
+          "slen": 40000000,
+          "max_scaffold_bp": 5111804,
+          "n_scaffolds_total": 3109,
+          "n_scaffolds_ge5kb": 1519,
+          "title": "ZooNev1.0 WGS genomic pool (top 40.0 Mb from 3,109 scaffolds, max 5111.8 kb)",
+          "source_mode": "ftp_genomic_pool",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/696/155/GCF_000696155.1_ZooNev1.0/GCF_000696155.1_ZooNev1.0_genomic.fna.gz"
+        }
+      ],
+      "genes": {}
+    },
+    "American_Lobster": {
+      "meta": {
+        "key": "American_Lobster",
+        "scientific_name": "Homarus americanus",
+        "clade_group": "crustacea_long",
+        "max_lifespan_yr": 100.0,
+        "is_immortal": false,
+        "notes": "Marine arthropod with negligible senescence (~100 yr)"
+      },
+      "assembly": {
+        "assembly_uid": "10375291",
+        "assembly_acc": "GCF_018991925.1",
+        "assembly_name": "GMGI_Hamer_2.0",
+        "assembly_status": "Scaffold",
+        "scaffold_n50": 759644,
+        "contig_n50": 133311,
+        "taxid": "6706",
+        "is_refseq": true,
+        "ftp_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/018/991/925/GCF_018991925.1_GMGI_Hamer_2.0",
+        "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/018/991/925/GCF_018991925.1_GMGI_Hamer_2.0/GCF_018991925.1_GMGI_Hamer_2.0_genomic.fna.gz"
+      },
+      "top_sequences": [
+        {
+          "acc": "NW_024713129.1",
+          "slen": 42517052,
+          "title": "scaffold32583 (unplaced-scaffold, na)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/018/991/925/GCF_018991925.1_GMGI_Hamer_2.0/GCF_018991925.1_GMGI_Hamer_2.0_genomic.fna.gz"
+        },
+        {
+          "acc": "NW_024722227.1",
+          "slen": 28258196,
+          "title": "scaffold31037 (unplaced-scaffold, na)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/018/991/925/GCF_018991925.1_GMGI_Hamer_2.0/GCF_018991925.1_GMGI_Hamer_2.0_genomic.fna.gz"
+        },
+        {
+          "acc": "NW_024716703.1",
+          "slen": 25630291,
+          "title": "scaffold57980 (unplaced-scaffold, na)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/018/991/925/GCF_018991925.1_GMGI_Hamer_2.0/GCF_018991925.1_GMGI_Hamer_2.0_genomic.fna.gz"
+        },
+        {
+          "acc": "NW_024741901.1",
+          "slen": 24559851,
+          "title": "scaffold34921 (unplaced-scaffold, na)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/018/991/925/GCF_018991925.1_GMGI_Hamer_2.0/GCF_018991925.1_GMGI_Hamer_2.0_genomic.fna.gz"
+        },
+        {
+          "acc": "NW_024737097.1",
+          "slen": 23303327,
+          "title": "scaffold32929 (unplaced-scaffold, na)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/018/991/925/GCF_018991925.1_GMGI_Hamer_2.0/GCF_018991925.1_GMGI_Hamer_2.0_genomic.fna.gz"
+        },
+        {
+          "acc": "NW_024730668.1",
+          "slen": 22235840,
+          "title": "scaffold6317 (unplaced-scaffold, na)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/018/991/925/GCF_018991925.1_GMGI_Hamer_2.0/GCF_018991925.1_GMGI_Hamer_2.0_genomic.fna.gz"
+        }
+      ],
+      "genes": {}
+    },
+    "Roundworm_Celegans": {
+      "meta": {
+        "key": "Roundworm_Celegans",
+        "scientific_name": "Caenorhabditis elegans",
+        "clade_group": "nematoda_model",
+        "max_lifespan_yr": 0.06,
+        "is_immortal": false,
+        "notes": "Canonical aging model organism (~21 days)"
+      },
+      "assembly": {
+        "assembly_uid": "30004221",
+        "assembly_acc": "GCA_052911875.1",
+        "assembly_name": "C.elegans_CGC1_1.0",
+        "assembly_status": "Complete Genome",
+        "scaffold_n50": 18555121,
+        "contig_n50": 18555121,
+        "taxid": "6239",
+        "is_refseq": false,
+        "ftp_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/052/911/875/GCA_052911875.1_C.elegans_CGC1_1.0",
+        "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/052/911/875/GCA_052911875.1_C.elegans_CGC1_1.0/GCA_052911875.1_C.elegans_CGC1_1.0_genomic.fna.gz"
+      },
+      "top_sequences": [
+        {
+          "acc": "AP038778.1",
+          "slen": 22067386,
+          "title": "V (assembled-molecule, V)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/052/911/875/GCA_052911875.1_C.elegans_CGC1_1.0/GCA_052911875.1_C.elegans_CGC1_1.0_genomic.fna.gz"
+        },
+        {
+          "acc": "AP038779.1",
+          "slen": 18785586,
+          "title": "X (assembled-molecule, X)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/052/911/875/GCA_052911875.1_C.elegans_CGC1_1.0/GCA_052911875.1_C.elegans_CGC1_1.0_genomic.fna.gz"
+        },
+        {
+          "acc": "AP038777.1",
+          "slen": 18555121,
+          "title": "IV (assembled-molecule, IV)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/052/911/875/GCA_052911875.1_C.elegans_CGC1_1.0/GCA_052911875.1_C.elegans_CGC1_1.0_genomic.fna.gz"
+        },
+        {
+          "acc": "AP038774.1",
+          "slen": 16508284,
+          "title": "I (assembled-molecule, I)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/052/911/875/GCA_052911875.1_C.elegans_CGC1_1.0/GCA_052911875.1_C.elegans_CGC1_1.0_genomic.fna.gz"
+        },
+        {
+          "acc": "AP038775.1",
+          "slen": 15800154,
+          "title": "II (assembled-molecule, II)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/052/911/875/GCA_052911875.1_C.elegans_CGC1_1.0/GCA_052911875.1_C.elegans_CGC1_1.0_genomic.fna.gz"
+        },
+        {
+          "acc": "AP038776.1",
+          "slen": 14624068,
+          "title": "III (assembled-molecule, III)",
+          "ftp_genomic_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/052/911/875/GCA_052911875.1_C.elegans_CGC1_1.0/GCA_052911875.1_C.elegans_CGC1_1.0_genomic.fna.gz"
+        }
+      ],
+      "genes": {}
     }
   }
 }
