@@ -50,7 +50,7 @@ try:
 except Exception:
     HAVE_MPL = False
 
-VERSION = "1.4.4"
+VERSION = "1.5.0"
 SCRIPT_DIR = Path(__file__).resolve().parent
 TINY = 1e-300
 UA = "tortoise-longevity-torus/1.0 (academic zero-RNG longevity & cancer-resistance audit)"
@@ -3699,6 +3699,15 @@ _LONGEVITY_SPECIES_SPEC = [
     # --- Patch 07: Short-Lived Invertebrate Controls (Matched Bivalvia & Unmethylated Controls) ---
     ("Pacific_Oyster",          "Crassostrea gigas",          "mollusc_control",    20.0, "Bivalvia control (25x lifespan contrast vs 507-yr Ocean Quahog)"),
     ("Fruit_Fly",               "Drosophila melanogaster",    "invertebrate_short", 0.25, "Unmethylated short-lived invertebrate control (3 months vs INF Cnidaria)"),
+    # --- Patch 08 (v1.5.0): Diptera, Methylated Eusocial Insects, Negligibly Senescent Crustacea & C. elegans ---
+    ("Malaria_Mosquito",        "Anopheles gambiae",          "diptera_compact",    0.15, "Diptera sister control to Drosophila (compact unmethylated genome)"),
+    ("Yellow_Fever_Mosquito",   "Aedes aegypti",              "diptera_repeat_rich",0.15, "Repeat-rich giant Diptera (~474 Mb chr1) vs compact Drosophila"),
+    ("Honeybee",                "Apis mellifera",             "hymenoptera_social",  8.0, "Functional CpG methylation; queen 5-8 yr vs worker weeks"),
+    ("Black_Garden_Ant",        "Lasius niger",               "hymenoptera_ant",    28.8, "Record insect longevity in AnAge (queen ~28.8 yr)"),
+    ("Fire_Ant",                "Solenopsis invicta",         "hymenoptera_ant",     7.0, "Chromosome-level RefSeq eusocial ant (queen ~7 yr)"),
+    ("Dampwood_Termite",        "Zootermopsis nevadensis",    "blattodea_termite",  15.0, "Independent non-Hymenoptera eusocial longevity (queen ~15 yr)"),
+    ("American_Lobster",        "Homarus americanus",         "crustacea_long",    100.0, "Marine arthropod with negligible senescence (~100 yr)"),
+    ("Roundworm_Celegans",      "Caenorhabditis elegans",     "nematoda_model",     0.06, "Canonical aging model organism (~21 days)"),
 ]
 
 LONGEVITY_SPECIES_PANEL = {
@@ -6194,6 +6203,14 @@ EXTREMES_NEW_SPECIES = [
     "Immortal_Jellyfish",
     "Pacific_Oyster",
     "Fruit_Fly",
+    "Malaria_Mosquito",
+    "Yellow_Fever_Mosquito",
+    "Honeybee",
+    "Black_Garden_Ant",
+    "Fire_Ant",
+    "Dampwood_Termite",
+    "American_Lobster",
+    "Roundworm_Celegans",
 ]
 
 EXTREMES20_PANEL = [
@@ -6220,6 +6237,10 @@ EXTREMES20_PANEL = [
 ]
 
 EXTREMES22_PANEL = EXTREMES20_PANEL[:-1] + ["Pacific_Oyster", "Turquoise_Killifish", "Fruit_Fly"]
+EXTREMES30_PANEL = EXTREMES22_PANEL + [
+    "American_Lobster", "Black_Garden_Ant", "Dampwood_Termite",
+    "Honeybee", "Fire_Ant", "Malaria_Mosquito", "Yellow_Fever_Mosquito", "Roundworm_Celegans",
+]
 
 
 def _download_chromosome_capped(key, acc, cache_dir, max_bp=400_000_000, chunk_bp=5_000_000, timeout=180):
@@ -6745,7 +6766,7 @@ def run_extremes_and_immortals_audit(manifest_path, chr_cache_dir, ckpt_dir, out
     t0 = time.time()
     manifest = json.loads(Path(manifest_path).read_text(encoding="utf-8"))
     sp_entries = manifest.get("species") or {}
-    want = [s.strip() for s in species_filter.split(",") if s.strip()] if species_filter else list(EXTREMES22_PANEL)
+    want = [s.strip() for s in species_filter.split(",") if s.strip()] if species_filter else list(EXTREMES30_PANEL)
 
     targets = []
     for sk in want:
@@ -6791,7 +6812,7 @@ def run_extremes_and_immortals_audit(manifest_path, chr_cache_dir, ckpt_dir, out
         r["cos_beyond_M2_vs_Aldabra"] = cos_m2_mat[sk].get("Aldabra_Tortoise")
         r["cos_beyond_M2_vs_Human_T2T"] = cos_m2_mat[sk].get("Human_T2T")
 
-    invert_groups = {"mollusc_extreme", "mollusc_control", "invertebrate_short", "cnidaria_immortal"}
+    invert_groups = {"mollusc_extreme", "mollusc_control", "invertebrate_short", "cnidaria_immortal", "diptera_compact", "diptera_repeat_rich", "hymenoptera_social", "hymenoptera_ant", "blattodea_termite", "crustacea_long", "nematoda_model"}
     mortal_recs = [r for r in recs if (not r.get("is_immortal")) and _finite(r.get("max_lifespan_yr"))]
     mortal_verts = [r for r in mortal_recs if r["clade_group"] not in invert_groups]
     mammal_groups = {"mammal_long", "mammal_peto", "mammal_cancer_res", "mammal_bat", "mammal_short"}
@@ -6924,6 +6945,9 @@ MATCHED_CLADE_CONTRASTS = [
     ("Bivalvia (Molluscs, 25x)",         "Ocean_Quahog",       "Pacific_Oyster"),
     ("Unmethylated (Immortal vs 0.25y)", "Hydra_Immortal",     "Fruit_Fly"),
     ("Unmethylated (Jellyfish vs 0.25y)","Immortal_Jellyfish", "Fruit_Fly"),
+    ("Diptera Sister (Fly vs Anopheles)", "Fruit_Fly",          "Malaria_Mosquito"),
+    ("Insecta Eusocial (Ant vs Fly, 115x)","Black_Garden_Ant",  "Fruit_Fly"),
+    ("Arthropoda (Lobster vs Fly, 400x)", "American_Lobster",   "Fruit_Fly"),
 ]
 
 
@@ -7125,6 +7149,14 @@ _SHORT_SP_PLOT = {
     "Pacific_Oyster": "Oyster",
     "Turquoise_Killifish": "Killifish",
     "Fruit_Fly": "Fruit Fly",
+    "Malaria_Mosquito": "Anopheles",
+    "Yellow_Fever_Mosquito": "Aedes",
+    "Honeybee": "Honeybee",
+    "Black_Garden_Ant": "Lasius Ant",
+    "Fire_Ant": "Fire Ant",
+    "Dampwood_Termite": "Termite",
+    "American_Lobster": "Lobster",
+    "Roundworm_Celegans": "C. elegans",
 }
 
 
@@ -7163,9 +7195,16 @@ def make_extremes_figures(payload, out_dir, dpi=300):
         "mammal_cancer_res": "#984ea3",
         "mammal_bat": "#bc80bd",
         "mammal_short": "#d95f02",
+        "diptera_compact": "#ff7f00",
+        "diptera_repeat_rich": "#fdbf6f",
+        "hymenoptera_social": "#ffd92f",
+        "hymenoptera_ant": "#8c510a",
+        "blattodea_termite": "#8c6bb1",
+        "crustacea_long": "#2171b5",
+        "nematoda_model": "#6baed6",
     }
 
-    fig, axes = plt.subplots(2, 2, figsize=(21.2, 14.8))
+    fig, axes = plt.subplots(2, 2, figsize=(22.4, 16.4))
     fig.subplots_adjust(left=0.065, right=0.965, top=0.875, bottom=0.105, wspace=0.31, hspace=0.35)
     fig.suptitle(
         f"Theorem L7 — Animal Kingdom Longevity & Biological Immortality Toric Atlas (n={len(recs)} Species, v{VERSION}, Zero-RNG)",
@@ -7189,7 +7228,7 @@ def make_extremes_figures(payload, out_dir, dpi=300):
     def _marker_for(cg):
         if cg == "cnidaria_immortal":
             return "*", 210
-        if cg in ("shark_extreme", "fish_extreme", "mollusc_extreme", "mollusc_control", "invertebrate_short"):
+        if cg in ("shark_extreme", "fish_extreme", "mollusc_extreme", "mollusc_control", "invertebrate_short", "diptera_compact", "diptera_repeat_rich", "hymenoptera_social", "hymenoptera_ant", "blattodea_termite", "crustacea_long", "nematoda_model"):
             return "D", 92
         if cg.startswith("mammal"):
             return "s", 92
@@ -7227,7 +7266,7 @@ def make_extremes_figures(payload, out_dir, dpi=300):
     ]
     ax.barh(y_pos, cpg_vals, color=bar_cols, alpha=0.90, edgecolor="#222222", lw=0.5)
     ax.set_yticks(y_pos)
-    ax.set_yticklabels(y_lbls, fontsize=7.7)
+    ax.set_yticklabels(y_lbls, fontsize=6.6 if len(recs) > 22 else 7.7)
     ax.invert_yaxis()
     ax.axvline(1.0, color="#666666", ls="--", lw=1.0, label="Unmethylated CpG Equilibrium (O/E = 1.0)")
     for yi, v in enumerate(cpg_vals):
@@ -7243,7 +7282,7 @@ def make_extremes_figures(payload, out_dir, dpi=300):
     inb_vals = [_fval(r.get("euch_I_nonbr_MM"), 0.0) for r in recs]
     ax.barh(y_pos, inb_vals, color=bar_cols, alpha=0.90, edgecolor="#222222", lw=0.5)
     ax.set_yticks(y_pos)
-    ax.set_yticklabels(y_lbls, fontsize=7.7)
+    ax.set_yticklabels(y_lbls, fontsize=6.6 if len(recs) > 22 else 7.7)
     ax.invert_yaxis()
     for yi, (v, r) in enumerate(zip(inb_vals, recs)):
         pr2_p = 100.0 * _fval(r.get("euch_PR2_ok_unb"), 0.0)
@@ -7258,7 +7297,7 @@ def make_extremes_figures(payload, out_dir, dpi=300):
     sp_ord = [r["species"] for r in recs]
     mat = np.array([[_fval(payload["cos_beyond_M2_euch_matrix"][a][b], np.nan) for b in sp_ord] for a in sp_ord])
     im = ax.imshow(mat, cmap="viridis", vmin=0.20, vmax=1.0)
-    f_sz = 6.1 if len(sp_ord) > 16 else 7.2
+    f_sz = 5.1 if len(sp_ord) > 22 else (6.1 if len(sp_ord) > 16 else 7.2)
     ax.set_xticks(range(len(sp_ord)))
     ax.set_xticklabels(y_lbls, rotation=45, ha="right", fontsize=f_sz)
     ax.set_yticks(range(len(sp_ord)))
@@ -7303,6 +7342,10 @@ EVOL_CLOCK_PAIRS = [
     ("Human_T2T",         "African_Elephant",         99.0, "Placentalia (Human-Elephant)"),
     ("Rougheye_Rockfish", "Turquoise_Killifish",     115.0, "Teleostei (205y vs 0.6y)"),
     ("Ocean_Quahog",      "Pacific_Oyster",          460.0, "Bivalvia (507y vs 20y)"),
+    ("Fruit_Fly",         "Malaria_Mosquito",        260.0, "Diptera (Fly vs Anopheles)"),
+    ("Malaria_Mosquito",  "Yellow_Fever_Mosquito",   150.0, "Culicidae (Anopheles vs Aedes)"),
+    ("Black_Garden_Ant",  "Fire_Ant",                100.0, "Formicidae (Lasius vs Fire Ant)"),
+    ("Honeybee",          "Black_Garden_Ant",        160.0, "Aculeata (Bee vs Ant)"),
 ]
 
 
@@ -7377,7 +7420,7 @@ def run_deep_toric_physics_analysis(manifest_path, chr_cache_dir, ckpt_dir, out_
     out_dir.mkdir(parents=True, exist_ok=True)
     Path(ckpt_dir).mkdir(parents=True, exist_ok=True)
 
-    want = [s.strip() for s in species_filter.split(",") if s.strip()] if species_filter else list(EXTREMES22_PANEL)
+    want = [s.strip() for s in species_filter.split(",") if s.strip()] if species_filter else list(EXTREMES30_PANEL)
     print(f"\n[TRACK D — THM-L8] Deep Multi-Lag Memory, Null-Tower & Split-Half Reliability ({len(want)} targets)...")
 
     deep_rows = []
@@ -7595,10 +7638,11 @@ def write_deep_physics_md(payload, path):
             )
         l5e = inv.get("thmL5e_cosmic_bifurcations") or {}
         s13_mw = l5e.get("mw_sbs13_chiral_amniotes_vs_non")
+        uv_mw = l5e.get("mw_uv_sbs7a_amniotes_vs_non")
         s2_mw = l5e.get("mw_sbs2_mammals_vs_sauropsids")
-        if s13_mw and s2_mw:
+        if s13_mw and uv_mw and s2_mw:
             L.append(
-                f"- **THM-L5e (Complete COSMIC Bifurcations):** Amniotes vs non-amniotes (`SBS13` chiral share & `SBS7a` UV) `r_rb=±1.000`, exact DP `p={s13_mw['p_twosided']:.2e}`; Mammals vs Sauropsids (`SBS2` & `TCW` O/E) `r_rb=+1.000`, exact DP `p={s2_mw['p_twosided']:.2e}`."
+                f"- **THM-L5e (COSMIC Clade Bifurcations):** Amniotes vs non-amniotes `SBS7a` UV `r_rb={uv_mw['rank_biserial_r']:+.3f}` (exact DP `p={uv_mw['p_twosided']:.2e}`), `SBS13` chiral share `r_rb={s13_mw['rank_biserial_r']:+.3f}` (DP `p={s13_mw['p_twosided']:.2e}`); Mammals vs Sauropsids (`SBS2` & `TCW` O/E) `r_rb={s2_mw['rank_biserial_r']:+.3f}` (exact DP `p={s2_mw['p_twosided']:.2e}`)."
             )
     L.append("")
     atomic_write(path, "\n".join(L) + "\n")
@@ -7658,7 +7702,8 @@ def make_deep_physics_figure(payload, out_dir, dpi=300):
         vals = [_fval(c.get("toric_drift_per_100Myr"), 0.0) for c in c_ord]
         c_cols = ["#1b9e77" if "Testudines" in c["clade_pair"] or "Archelosauria" in c["clade_pair"]
                   else ("#6a3d9a" if any(k in c["clade_pair"] for k in ("Rodentia", "Euarch", "Boreo", "Placental"))
-                        else "#3182bd") for c in c_ord]
+                        else ("#e6ab02" if any(k in c["clade_pair"] for k in ("Diptera", "Culicidae", "Formicidae", "Aculeata"))
+                              else "#3182bd")) for c in c_ord]
         c_lbls = [f"{_SHORT_SP_PLOT.get(c['species_a'], c['species_a'])} × {_SHORT_SP_PLOT.get(c['species_b'], c['species_b'])} ({c['divergence_Myr']:.0f}M)" for c in c_ord]
         ax.barh(y_c, vals, color=c_cols, alpha=0.90, edgecolor="#222222", lw=0.5)
         ax.set_yticks(y_c); ax.set_yticklabels(c_lbls, fontsize=7.8)
@@ -7680,8 +7725,8 @@ def make_deep_physics_figure(payload, out_dir, dpi=300):
         col = "#e7298a" if r.get("is_immortal") else ("#1b9e77" if "testudines" in r["clade_group"] else ("#6a3d9a" if "mammal" in r["clade_group"] else "#3182bd"))
         mk = "*" if r.get("is_immortal") else "o"
         ax.scatter(xv, yv, s=180 if r.get("is_immortal") else 95, marker=mk, color=col, edgecolors="#111111", lw=0.7, zorder=5)
-        pts_c.append((float(xv), float(yv), r["species"].replace("_", " ")))
-    _annotate_linear_scatter_clean(ax, pts_c, fontsize=7.3)
+        pts_c.append((float(xv), float(yv), _SHORT_SP_PLOT.get(r["species"], r["species"].replace("_", " "))))
+    _annotate_linear_scatter_clean(ax, pts_c, fontsize=6.9, pad_x_pt=2.8, pad_y_pt=2.0)
     ax.set_xlabel(r"Long-Range Repeat-Memory Persistence $I_{\mathrm{nonbr}}(30) / I_{\mathrm{nonbr}}(3)$", fontsize=10.0)
     ax.set_ylabel("Irreducible Beyond-Markov-2 Energy Share (%)", fontsize=10.0)
     ax.set_title("C. Repeat-Memory Persistence vs. Irreducible Higher-Order Syntax", fontsize=10.5, fontweight="bold", pad=8)
@@ -7694,7 +7739,7 @@ def make_deep_physics_figure(payload, out_dir, dpi=300):
     sh_vals = [_fval((r.get("split_half") or {}).get("cos_beyond_M2_L_vs_R"), 0.0) for r in r_sh]
     sh_lbls = [r["species"].replace("_", " ") for r in r_sh]
     ax.barh(y_s, sh_vals, color="#006d77", alpha=0.86, edgecolor="#222222", lw=0.5)
-    ax.set_yticks(y_s); ax.set_yticklabels(sh_lbls, fontsize=7.8)
+    ax.set_yticks(y_s); ax.set_yticklabels(sh_lbls, fontsize=6.6 if len(r_sh) > 22 else 7.8)
     for yi, v in enumerate(sh_vals):
         ax.text(v + 0.004, yi, f"{v:.4f}", va="center", ha="left", fontsize=7.3)
     ax.set_xlim(min(0.80, min(sh_vals) - 0.05) if sh_vals else 0.80, 1.045)
@@ -7818,7 +7863,7 @@ def compute_metazoan_invariants_L5d_L8bc(ext_payload, deep_payload):
         }
 
     # 7. THM-L8e: Mammalian Markov-2 radial overshoot inversion (Delta_M2-M1 & Delta_cos)
-    invert_groups = {"mollusc_extreme", "mollusc_control", "invertebrate_short", "cnidaria_immortal"}
+    invert_groups = {"mollusc_extreme", "mollusc_control", "invertebrate_short", "cnidaria_immortal", "diptera_compact", "diptera_repeat_rich", "hymenoptera_social", "hymenoptera_ant", "blattodea_termite", "crustacea_long", "nematoda_model"}
     def _d_m2m1(r):
         ntw = r["null_tower"]
         return 100.0 * (float(ntw["beyond_M2_energy_ratio"]) - float(ntw["beyond_M1_energy_ratio"]))
@@ -7839,6 +7884,30 @@ def compute_metazoan_invariants_L5d_L8bc(ext_payload, deep_payload):
         "mw_delta_cos_mammals_vs_other_verts": exact_mann_whitney_u(dc_mam, dc_nonv) if (len(dc_mam) >= 2 and len(dc_nonv) >= 2) else None,
         "mw_delta_cos_mammals_vs_all_nonmammals": exact_mann_whitney_u(dc_mam, dc_nonall) if (len(dc_mam) >= 2 and len(dc_nonall) >= 2) else None,
     }
+    # 8. THM-L8g: Ecdysozoa (Insects, Lobster, C. elegans) d=10 bp Resonance Audit
+    ecdy_groups = {"invertebrate_short", "diptera_compact", "diptera_repeat_rich", "hymenoptera_social", "hymenoptera_ant", "blattodea_termite", "crustacea_long", "nematoda_model"}
+    ecdy_rows = []
+    by_sp_e = {r["species"]: r for r in erecs}
+    for r in drows:
+        if r["clade_group"] in ecdy_groups:
+            ls = r["lag_spectrum"]
+            ntw = r.get("null_tower") or {}
+            er = by_sp_e.get(r["species"]) or {}
+            d3v = 100.0 * _fval(ls["3"]["nonenv_3600_unb"], np.nan)
+            d10v = 100.0 * _fval(ls["10"]["nonenv_3600_unb"], np.nan)
+            d30v = 100.0 * _fval(ls["30"]["nonenv_3600_unb"], np.nan)
+            d90v = 100.0 * _fval(ls["90"]["nonenv_3600_unb"], np.nan)
+            ecdy_rows.append({
+                "species": r["species"], "clade_group": r["clade_group"],
+                "cpg_oe": er.get("cpg_oe_euch"),
+                "d3_pct": d3v, "d10_pct": d10v, "d30_pct": d30v, "d90_pct": d90v,
+                "d10_minus_d3_pp": (d10v - d3v) if (_finite(d10v) and _finite(d3v)) else None,
+                "beyond_M2_pct": 100.0 * _fval(ntw.get("beyond_M2_energy_ratio"), np.nan),
+                "I_nonbr_3": ls["3"]["I_nonbr_MM"],
+                "ww_nuc_nt": er.get("euch_ww_nuc_nt"),
+                "ww_ss_deg": er.get("euch_ww_ss_phase_deg"),
+            })
+    out["thmL8g_ecdysozoa_d10_anomaly"] = ecdy_rows
     return out
 
 
@@ -7879,7 +7948,11 @@ def make_fig_L10_metazoan_invariants(ext_payload, deep_payload, out_dir, dpi=300
         "Human_T2T":          ("#6a3d9a", "--", 2.1, "Human T2T (122.5y)"),
         "Hydra_Immortal":     ("#e7298a", "-",  2.0, "Hydra (∞)"),
         "Immortal_Jellyfish": ("#f768a1", ":",  2.0, "Jellyfish (∞)"),
-        "Fruit_Fly":          ("#e41a1c", "-",  2.8, "Fruit Fly (0.25y) — 10-bp outlier"),
+        "Fruit_Fly":          ("#e41a1c", "-",  2.8, "Drosophila (0.25y)"),
+        "Malaria_Mosquito":   ("#ff7f00", "-",  2.2, "Anopheles (0.15y)"),
+        "Honeybee":           ("#e6ab02", "-",  2.1, "Honeybee (8y)"),
+        "Black_Garden_Ant":   ("#8c510a", "--", 2.0, "Lasius Ant (28.8y)"),
+        "Roundworm_Celegans": ("#386cb0", ":",  2.1, "C. elegans (0.06y)"),
     }
     for r in drows:
         sk = r["species"]
@@ -7901,7 +7974,8 @@ def make_fig_L10_metazoan_invariants(ext_payload, deep_payload, out_dir, dpi=300
     ax.set_ylim(4.0, 94.0)
     ax.set_xlabel("Inter-Triplet Physical Lag d (bp, log scale)", fontsize=10.0)
     ax.set_ylabel("Unbiased 3600-D Non-Envelope Arrow Share (%)", fontsize=10.0)
-    ax.set_title("A. Theorem L8b: Asymptotic 447/512 Isotropy Relaxation (21/22 Converge)", fontsize=10.4, fontweight="bold", pad=8)
+    n_conv = sum(1 for r in drows if _fval(r["lag_spectrum"]["30"]["nonenv_3600_unb"], 0.0) >= 0.65)
+    ax.set_title(f"A. Theorem L8b: Asymptotic 447/512 Isotropy Relaxation ({n_conv}/{len(drows)} Converge)", fontsize=10.4, fontweight="bold", pad=8)
     leg_a = ax.legend(fontsize=7.3, loc="lower right", ncol=2, framealpha=0.95)
     ax.grid(True, ls=":", alpha=0.35)
 
@@ -7960,12 +8034,13 @@ def make_fig_L10_metazoan_invariants(ext_payload, deep_payload, out_dir, dpi=300
     for yi, v in enumerate(h_vals):
         ax.text(v + 0.009, yi, f"{v:.3f}", va="center", ha="left", fontsize=7.6)
     ax.set_yticks(y_h)
-    ax.set_yticklabels(h_lbls, fontsize=8.0)
+    ax.set_yticklabels(h_lbls, fontsize=6.6 if len(h_rows) > 22 else 8.0)
     ax.invert_yaxis()
-    ax.set_xlim(0.35, 1.00)
+    ax.set_xlim(0.35, 1.04)
     ax.set_xlabel(r"Megabase-Scale Euchromatin Hurst Exponent $H(W_{-+}^{\mathrm{unb}})$ (WLS)", fontsize=10.0)
-    ax.set_title(r"B. Theorem L5d: Amniote Hurst Bifurcation ($r_{\mathrm{rb}}=+1.000$, DP $p=2.58\times 10^{-5}$)",
-                 fontsize=10.4, fontweight="bold", pad=8)
+    _hur_mw = ((deep_payload.get("metazoan_invariants_L5d_L8bc") or {}).get("thmL5d_amniote_hurst_bifurcation") or {}).get("mw_amniotes_gt100Mb_vs_nonamniotes") or {}
+    _h_sub = f"$r_{{\\mathrm{{rb}}}}={_hur_mw['rank_biserial_r']:+.3f}$, DP $p={_hur_mw['p_twosided']:.2e}$" if _hur_mw else ""
+    ax.set_title(f"B. Theorem L5d: Amniote Hurst Bifurcation ({_h_sub})", fontsize=10.4, fontweight="bold", pad=8)
     leg_b = [
         Patch(facecolor="#1b9e77", edgecolor="#222222", label="Amniote Sauropsid (>100 Mb)"),
         Patch(facecolor="#6a3d9a", edgecolor="#222222", label="Amniote Mammal (>100 Mb)"),
@@ -7995,12 +8070,13 @@ def make_fig_L10_metazoan_invariants(ext_payload, deep_payload, out_dir, dpi=300
     for yi, v in enumerate(p_vals):
         ax.text(v + 0.06, yi, f"{v:.2f}%", va="center", ha="left", fontsize=7.4)
     ax.set_yticks(y_p)
-    ax.set_yticklabels(p_lbls, fontsize=7.9)
+    ax.set_yticklabels(p_lbls, fontsize=6.6 if len(p_rows) > 22 else 7.9)
     ax.invert_yaxis()
-    ax.set_xlim(0.0, 5.45)
+    ax.set_xlim(0.0, max(max(p_vals) * 1.18, 5.45))
     ax.set_xlabel(r"64-Palindrome Share of Directed Time-Arrow Energy $W_{-+}$ (%)", fontsize=10.0)
-    ax.set_title(r"C. Theorem L8c: Palindromic Depletion vs. $1/32$ Quantum (DP $p=2.41\times 10^{-3}$)",
-                 fontsize=10.4, fontweight="bold", pad=8)
+    _pal_mw = ((deep_payload.get("metazoan_invariants_L5d_L8bc") or {}).get("thmL8c_mammalian_palindromes") or {}).get("mw_mammals_vs_nonmammals") or {}
+    _p_sub = f"DP $p={_pal_mw['p_twosided']:.2e}$" if _pal_mw else ""
+    ax.set_title(f"C. Theorem L8c: Palindromic Depletion vs. $1/32$ Quantum ({_p_sub})", fontsize=10.4, fontweight="bold", pad=8)
     leg_c = [
         Line2D([0], [0], color="#111111", ls="--", lw=1.25, label=r"Exact Isotropy Quantum $1/32 = 3.125\%$"),
         Patch(facecolor="#6a3d9a", edgecolor="#222222", label="Placental Mammals (5/6 bottom)"),
@@ -8026,9 +8102,9 @@ def make_fig_L10_metazoan_invariants(ext_payload, deep_payload, out_dir, dpi=300
             else ("#1b9e77" if "testudines" in cg or cg == "archosaur_long"
                   else ("#e6ab02" if cg == "reptile_short"
                         else ("#6a3d9a" if cg.startswith("mammal")
-                              else ("#a65628" if "mollusc" in cg or "invertebrate" in cg else "#3182bd"))))
+                              else ("#a65628" if any(k in cg for k in ("mollusc", "invertebrate", "diptera", "hymenoptera", "blattodea", "crustacea", "nematoda")) else "#3182bd"))))
         )
-        mk = "*" if r.get("is_immortal") else ("s" if cg.startswith("mammal") else ("D" if cg in ("shark_extreme", "fish_extreme", "mollusc_extreme", "mollusc_control", "invertebrate_short") else "o"))
+        mk = "*" if r.get("is_immortal") else ("s" if cg.startswith("mammal") else ("D" if cg in ("shark_extreme", "fish_extreme", "mollusc_extreme", "mollusc_control", "invertebrate_short", "diptera_compact", "diptera_repeat_rich", "hymenoptera_social", "hymenoptera_ant", "blattodea_termite", "crustacea_long", "nematoda_model") else "o"))
         sz = 210 if r.get("is_immortal") else (150 if r["species"] == "Human_T2T" else 95)
         ax.scatter(xv, yv, s=sz, marker=mk, color=col, edgecolors="#111111", lw=0.8, zorder=5)
         pts_d.append((xv, yv, short.get(r["species"], r["species"].replace("_", " "))))
@@ -8378,7 +8454,7 @@ def self_test(verbose=False):
     assert LONGEVITY_SPECIES_PANEL["Immortal_Jellyfish"]["max_lifespan_yr"] is None
     ok["46_immortal_excluded_from_mortal_spearman_ok"] = True
 
-    assert len(LONGEVITY_SPECIES_PANEL) == 23 and len(EXTREMES20_PANEL) == 20
+    assert len(LONGEVITY_SPECIES_PANEL) == 31 and len(EXTREMES20_PANEL) == 20
     ok["47_extremes_panel_21_species_ok"] = True
 
     assert VERSION >= "1.4.0"
@@ -8453,7 +8529,7 @@ def self_test(verbose=False):
                 os.unlink(_p)
     ok["55_ftp_genomic_top_extractor_exact_err"] = _err_ex
 
-    assert VERSION >= "1.4.2" and len(MATCHED_CLADE_CONTRASTS) == 8
+    assert VERSION >= "1.4.2" and len(MATCHED_CLADE_CONTRASTS) == 11
     ok["56_version_1_4_2_clade_contrasts_ok"] = True
 
     # 18. Patch 10 Metazoan Structural Invariants (THM-L5d, L8b, L8c) & fig_L10 integration (60/60)
@@ -8507,7 +8583,7 @@ def self_test(verbose=False):
     assert abs(_mw_6_8["p_twosided"] - (2.0 / float(math.comb(14, 6)))) < 1e-15
     ok["63_thmL5e_L8e_exact_dp_separations_ok"] = True
 
-    assert VERSION == "1.4.4"
+    assert VERSION == "1.5.0"
     ok["64_version_1_4_4_all_invariants_ok"] = True
 
     ok["all_passed"] = True
